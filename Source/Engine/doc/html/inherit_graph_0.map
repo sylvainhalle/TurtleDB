@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_communicator.html" title="ca.uqac.dim.turtledb.Communicator" alt="" coords="5,31,235,57"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_centralized_communicator.html" title="ca.uqac.dim.turtledb.CentralizedCommunicator" alt="" coords="283,5,578,32"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_http_communicator.html" title="ca.uqac.dim.turtledb.HttpCommunicator" alt="" coords="303,56,558,83"/>
+</map>

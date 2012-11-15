@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_graphviz_query_visitor.html" title="ca.uqac.dim.ddb.GraphvizQueryVisitor" alt="" coords="249,5,495,32"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_table_link_visitor.html" title="ca.uqac.dim.ddb.TableLinkVisitor" alt="" coords="265,56,479,83"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_xml_query_visitor.html" title="ca.uqac.dim.ddb.XmlQueryVisitor" alt="" coords="263,107,481,133"/>
+</map>

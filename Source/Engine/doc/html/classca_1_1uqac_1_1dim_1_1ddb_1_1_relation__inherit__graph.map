@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_n_ary_relation.html" title="ca.uqac.dim.ddb.NAryRelation" alt="" coords="227,56,427,83"/>
+<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_table.html" title="ca.uqac.dim.ddb.Table" alt="" coords="249,107,404,133"/>
+<area shape="rect" id="node6" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_unary_relation.html" title="ca.uqac.dim.ddb.UnaryRelation" alt="" coords="224,157,429,184"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_intersection.html" title="ca.uqac.dim.ddb.Intersection" alt="" coords="483,5,674,32"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_union.html" title="ca.uqac.dim.ddb.Union" alt="" coords="501,56,657,83"/>
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_projection.html" title="ca.uqac.dim.ddb.Projection" alt="" coords="489,107,669,133"/>
+<area shape="rect" id="node8" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_selection.html" title="ca.uqac.dim.ddb.Selection" alt="" coords="491,157,667,184"/>
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1ddb_1_1_variable_table.html" title="ca.uqac.dim.ddb.VariableTable" alt="" coords="478,208,679,235"/>
+</map>

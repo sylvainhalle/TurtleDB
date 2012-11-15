@@ -1,0 +1,27 @@
+var namespaceca_1_1uqac_1_1dim_1_1ddb =
+[
+    [ "Attribute", "classca_1_1uqac_1_1dim_1_1ddb_1_1_attribute.html", null ],
+    [ "Condition", "classca_1_1uqac_1_1dim_1_1ddb_1_1_condition.html", null ],
+    [ "Engine", "classca_1_1uqac_1_1dim_1_1ddb_1_1_engine.html", null ],
+    [ "Equality", "classca_1_1uqac_1_1dim_1_1ddb_1_1_equality.html", null ],
+    [ "GraphvizQueryFormatter", "classca_1_1uqac_1_1dim_1_1ddb_1_1_graphviz_query_formatter.html", null ],
+    [ "GraphvizQueryVisitor", "classca_1_1uqac_1_1dim_1_1ddb_1_1_graphviz_query_visitor.html", null ],
+    [ "Intersection", "classca_1_1uqac_1_1dim_1_1ddb_1_1_intersection.html", null ],
+    [ "Literal", "classca_1_1uqac_1_1dim_1_1ddb_1_1_literal.html", null ],
+    [ "NAryRelation", "classca_1_1uqac_1_1dim_1_1ddb_1_1_n_ary_relation.html", null ],
+    [ "Projection", "classca_1_1uqac_1_1dim_1_1ddb_1_1_projection.html", null ],
+    [ "QueryVisitor", "classca_1_1uqac_1_1dim_1_1ddb_1_1_query_visitor.html", null ],
+    [ "Relation", "classca_1_1uqac_1_1dim_1_1ddb_1_1_relation.html", null ],
+    [ "Schema", "classca_1_1uqac_1_1dim_1_1ddb_1_1_schema.html", null ],
+    [ "Selection", "classca_1_1uqac_1_1dim_1_1ddb_1_1_selection.html", null ],
+    [ "Table", "classca_1_1uqac_1_1dim_1_1ddb_1_1_table.html", null ],
+    [ "TableLinkVisitor", "classca_1_1uqac_1_1dim_1_1ddb_1_1_table_link_visitor.html", null ],
+    [ "Tuple", "classca_1_1uqac_1_1dim_1_1ddb_1_1_tuple.html", null ],
+    [ "UnaryRelation", "classca_1_1uqac_1_1dim_1_1ddb_1_1_unary_relation.html", null ],
+    [ "Union", "classca_1_1uqac_1_1dim_1_1ddb_1_1_union.html", null ],
+    [ "Value", "classca_1_1uqac_1_1dim_1_1ddb_1_1_value.html", null ],
+    [ "VariableTable", "classca_1_1uqac_1_1dim_1_1ddb_1_1_variable_table.html", null ],
+    [ "XmlQueryFormatter", "classca_1_1uqac_1_1dim_1_1ddb_1_1_xml_query_formatter.html", null ],
+    [ "XmlQueryParser", "classca_1_1uqac_1_1dim_1_1ddb_1_1_xml_query_parser.html", null ],
+    [ "XmlQueryVisitor", "classca_1_1uqac_1_1dim_1_1ddb_1_1_xml_query_visitor.html", null ]
+];

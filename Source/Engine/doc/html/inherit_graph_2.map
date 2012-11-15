@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="6,31,205,57"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html" title="ca.uqac.dim.turtledb.Equality" alt="" coords="273,5,463,32"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html" title="ca.uqac.dim.turtledb.NAryCondition" alt="" coords="253,56,483,83"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_and.html" title="ca.uqac.dim.turtledb.LogicalAnd" alt="" coords="531,31,739,57"/>
+<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_or.html" title="ca.uqac.dim.turtledb.LogicalOr" alt="" coords="535,81,734,108"/>
+</map>

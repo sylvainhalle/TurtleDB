@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_and.html" title="ca.uqac.dim.turtledb.LogicalAnd" alt="" coords="5,155,213,181"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_or.html" title="ca.uqac.dim.turtledb.LogicalOr" alt="" coords="238,155,436,181"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="123,5,321,32"/>
+</map>
