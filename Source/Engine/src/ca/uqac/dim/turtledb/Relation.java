@@ -68,7 +68,7 @@ public abstract class Relation implements Iterator<Tuple>
    * Empty constructor. Should only be called from children's
    * constructors. 
    */
-  public Relation()
+  protected Relation()
   {
     super();
     m_outputTuples = new LinkedList<Tuple>();
@@ -139,7 +139,8 @@ public abstract class Relation implements Iterator<Tuple>
     while (this.hasNext())
     {
       Tuple t = this.next();
-      for (Attribute s : t.keySet())
+      //for (Attribute s : t.keySet())
+      for (Attribute s : sch)
       {
         out.append(t.get(s)).append("\t");
       }

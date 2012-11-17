@@ -17,11 +17,12 @@
  -------------------------------------------------------------------------*/
 package ca.uqac.dim.turtledb;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 /**
@@ -55,7 +56,7 @@ public class XmlQueryParser
     }
     try
     {
-      Document document = builder.parse(s);
+      Document document = builder.parse(new InputSource(new StringReader(s)));
       return parse(document);
     }
     catch (SAXException e)
@@ -94,10 +95,17 @@ public class XmlQueryParser
   protected static Relation parse(Node e) throws XmlQueryParser.ParseException
   {
     NodeList nl = e.getChildNodes();
+    String name = "";
     for (int i = 0; i < nl.getLength(); i++)
     {
       Node n = nl.item(i);
-      String name = n.getLocalName().toLowerCase();
+      if (n.getNodeType() != Node.ELEMENT_NODE)
+    	  continue;
+      Element elem = (Element) n;
+      name = elem.getTagName();
+      if (name == null)
+    	  continue;
+      name = name.toLowerCase();
       if (name.compareTo("selection") == 0)
       {
         return parseSelection(n);
@@ -132,7 +140,7 @@ public class XmlQueryParser
       }
     }
     // If we get here, we did not recognize any operand we know
-    throw new XmlQueryParser.ParseException("Unrecognized operand");
+    throw new XmlQueryParser.ParseException("Unrecognized operand: " + name);
   }
   
   /**
