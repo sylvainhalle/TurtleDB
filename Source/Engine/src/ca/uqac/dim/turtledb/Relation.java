@@ -142,7 +142,8 @@ public abstract class Relation implements Iterator<Tuple>
       //for (Attribute s : t.keySet())
       for (Attribute s : sch)
       {
-        out.append(t.get(s)).append("\t");
+    	Value v = t.get(s);
+        out.append(v).append("\t");
       }
       out.append("\n");
     }

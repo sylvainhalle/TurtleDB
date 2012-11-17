@@ -43,11 +43,25 @@ public class Schema extends Vector<Attribute>
    */
   public Schema(String s)
   {
+    this();
     String parts[] = s.split(",");
     for (String a : parts)
     {
       a = a.trim();
       Attribute att = new Attribute(a);
+      this.add(att);
+    }
+  }
+  
+  /**
+   * Constructor by copy
+   * @param s The schema
+   */
+  public Schema(Schema s)
+  {
+    this();
+    for (Attribute att : s)
+    {
       this.add(att);
     }
   }
@@ -69,6 +83,12 @@ public class Schema extends Vector<Attribute>
     }
   }
   
+  /**
+   * Creates a schema from a comma-separated list of
+   * attributes. Each attribute must be formatted
+   * as [tablename.]attributename
+   * @param s The string containing the list
+   */
   protected void createFromString(String s)
   {
     String parts[] = s.split(",");
@@ -78,6 +98,16 @@ public class Schema extends Vector<Attribute>
       Attribute att = new Attribute(a);
       this.add(att);
     }    
+  }
+  
+  /**
+   * Assigns a table name to the tuples in the schema
+   * @param name The table's name
+   */
+  public void setTableName(String name)
+  {
+	  for (Attribute a : this)
+		  a.setTableName(name);
   }
 
 }

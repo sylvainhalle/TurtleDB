@@ -89,9 +89,15 @@ public class Table extends Relation
     return m_name;
   }
   
+  /**
+   * Sets the table's schema
+   * @param sch The schema
+   */
   protected void setSchema(Schema sch)
   {
-    m_schema = sch;
+	Schema s = new Schema(sch);
+	s.setTableName(m_name);
+    m_schema = s;
   }
 
   @Override

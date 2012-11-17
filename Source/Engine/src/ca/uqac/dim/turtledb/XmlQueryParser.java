@@ -518,6 +518,10 @@ public class XmlQueryParser
       {
         s = parseSchema(n);
       }
+      if (n.getNodeName().compareToIgnoreCase("name") == 0)
+      {
+    	table_name = n.getTextContent().trim();
+      }
       if (n.getNodeName().compareToIgnoreCase("tuple") == 0)
       {
         Tuple t = parseTuple(n);
@@ -525,7 +529,7 @@ public class XmlQueryParser
       }
     }
     Table tab = new Table(table_name);
-    tab.m_schema = s;
+    tab.setSchema(s);
     tab.putAll(tuples);
     if (s == null)
       throw new XmlQueryParser.ParseException("Missing schema in projection");
