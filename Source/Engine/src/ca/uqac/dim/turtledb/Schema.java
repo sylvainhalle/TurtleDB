@@ -32,7 +32,10 @@ public class Schema extends Vector<Attribute>
    */
   private static final long serialVersionUID = 1L;
   
-  /*package*/ Schema()
+  /**
+   * Empty constructor
+   */
+  public Schema()
   {
     super();
   }

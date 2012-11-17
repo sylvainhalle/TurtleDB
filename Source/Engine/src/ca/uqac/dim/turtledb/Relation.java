@@ -25,38 +25,8 @@ import java.util.*;
  * @author sylvain
  *
  */
-public abstract class Relation implements Iterator<Tuple>
+public abstract class Relation
 {
-  
-  protected List<Tuple> m_outputTuples;
-  protected Tuple m_nextTuple;
-  protected boolean m_internalNextCalled;
-  
-  /**
-   * Method that must be implemented by every non-abstract
-   * relation; it returns the next tuple
-   * of the enumeration, if any. Methods {@link next} and
-   * {@link hasNext} use the return value of {@link internalNext}
-   * and additionally remove any duplicate tuples from the output
-   * enumeration. Hence a call to {@link next} may result in
-   * multiple calls to the relation's {@link internalNext}, if
-   * the tuples returned are already part of the result (this is
-   * especially true of {@link Projection}s.
-   * @return The next tuple, <tt>null</tt> if no such tuple
-   * exists
-   */
-  protected abstract Tuple internalNext();
-  
-  /**
-   * Resets the enumeration of tuples, i.e. starts back at
-   * the first tuple of the relation.
-   */
-  public void reset()
-  {
-    m_nextTuple = null;
-    m_outputTuples.clear();
-    m_internalNextCalled = false;
-  }
   
   /**
    * Returns the relation's schema
@@ -71,44 +41,8 @@ public abstract class Relation implements Iterator<Tuple>
   protected Relation()
   {
     super();
-    m_outputTuples = new LinkedList<Tuple>();
-    m_internalNextCalled = false;
   }
-  
-  @Override
-  public final boolean hasNext()
-  {
-    if (!m_internalNextCalled)
-    {
-      next();
-      m_internalNextCalled = true;
-    }
-    return m_nextTuple != null;
-  }
-  
-  @Override
-  public final Tuple next()
-  {
-    if (!m_internalNextCalled)
-    {
-      while (true)
-      {
-        m_nextTuple = internalNext();
-        if (m_nextTuple == null)
-        {
-          break;
-        }
-        if (!m_outputTuples.contains(m_nextTuple))
-        {
-          m_outputTuples.add(m_nextTuple);
-          break;
-        }
-      }
-    }
-    m_internalNextCalled = false;
-    return m_nextTuple;
-  }
-  
+
   /**
    * A relation's degree is the size of its schema.
    * @return The relation's degree
@@ -136,9 +70,10 @@ public abstract class Relation implements Iterator<Tuple>
       out.append("--------");
     }
     out.append("\n");
-    while (this.hasNext())
+    Iterator<Tuple> i = this.iterator();
+    while (i.hasNext())
     {
-      Tuple t = this.next();
+      Tuple t = i.next();
       //for (Attribute s : t.keySet())
       for (Attribute s : sch)
       {
@@ -148,12 +83,6 @@ public abstract class Relation implements Iterator<Tuple>
       out.append("\n");
     }
     return out.toString();
-  }
-  
-  @Override
-  public void remove()
-  {
-    // Not supported at the moment
   }
   
   public abstract void accept(QueryVisitor v) throws QueryVisitor.VisitorException;
@@ -168,10 +97,10 @@ public abstract class Relation implements Iterator<Tuple>
   public int getCardinality()
   {
     int size = 0;
-    this.reset();
-    while (this.hasNext())
+    Iterator<Tuple> i = this.iterator();
+    while (i.hasNext())
     {
-      this.next();
+      i.next();
       size++;
     }
     return size;
@@ -195,18 +124,24 @@ public abstract class Relation implements Iterator<Tuple>
    */
   public boolean contains(Tuple tup)
   {
-    this.reset();
     if (tup == null)
       return false;
     assert tup != null;
-    while (this.hasNext())
+    Iterator<Tuple> i = this.iterator();
+    while (i.hasNext())
     {
-      Tuple t = this.next();
+      Tuple t = i.next();
       if (tup.equals(t))
         return true;
     }
     return false;
   }
+
+  /**
+   * Returns an iterator over tuples of the relation
+   * @return
+   */
+  public abstract RelationIterator iterator();
   
   /**
    * Determines if the query tree is a fragment. This is the

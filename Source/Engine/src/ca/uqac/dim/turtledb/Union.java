@@ -27,12 +27,6 @@ import ca.uqac.dim.turtledb.QueryVisitor.VisitorException;
  */
 public class Union extends NAryRelation
 {   
-  @Override
-  protected Tuple internalNext()
-  {
-    super.initializeIteration();
-    return super.incrementSmallestTuple();
-  }
 
   @Override
   public void accept(QueryVisitor v) throws VisitorException
@@ -41,4 +35,24 @@ public class Union extends NAryRelation
     v.visit(this);
   }
 
+  protected class UnionIterator extends NAryRelationIterator
+  {
+    public UnionIterator()
+    {
+      super();
+    }
+    
+    @Override
+    protected Tuple internalNext()
+    {
+      super.initializeIteration();
+      return super.incrementSmallestTuple();
+    }
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new UnionIterator();
+  }
 }

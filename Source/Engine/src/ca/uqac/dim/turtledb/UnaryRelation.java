@@ -25,16 +25,28 @@ public abstract class UnaryRelation extends Relation
   {
     m_relation = r;
   }
-  
-  @Override
-  public void reset()
-  {
-    super.reset();
-    m_relation.reset();
-  }
+
   
   public int tupleCount()
   {
     return m_relation.tupleCount();
+  }
+  
+  protected abstract class UnaryRelationIterator extends RelationIterator
+  {
+    protected RelationIterator m_childIterator;
+    
+    public UnaryRelationIterator()
+    {
+      super();
+      m_childIterator = m_relation.iterator();
+    }
+    
+    @Override
+    public void reset()
+    {
+      super.reset();
+      m_childIterator.reset();
+    }
   }
 }

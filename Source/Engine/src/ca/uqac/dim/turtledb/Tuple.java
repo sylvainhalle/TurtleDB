@@ -59,11 +59,14 @@ public class Tuple implements Comparable<Tuple>
   
   public Value get(Literal a)
   {
-	Collections.sort(m_attributes);
-    int index = Collections.binarySearch(m_attributes, a);
-    if (index < 0)
-      return null;
-    return m_values.elementAt(index);
+    // TODO: eventually replace by a Map search
+    for (int i = 0; i < m_attributes.size(); i++)
+    {
+      Attribute att = m_attributes.elementAt(i);
+      if (att.equals(a))
+        return m_values.elementAt(i);
+    }
+    return null;
   }
   
   public void clear()

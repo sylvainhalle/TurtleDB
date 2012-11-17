@@ -17,6 +17,8 @@
  -------------------------------------------------------------------------*/
 package ca.uqac.dim.turtledb;
 
+import java.util.Vector;
+
 import ca.uqac.dim.turtledb.QueryVisitor.VisitorException;
 
 public class Product extends NAryRelation
@@ -33,37 +35,49 @@ public class Product extends NAryRelation
     return sch;
   }
   
-  @Override
-  protected Tuple internalNext()
-  {
-    super.initializeIteration();
-    int len = m_relations.size();
-    
-    // Update m_lastTuple by "incrementing" the vector
-    for (int i = len - 1; i >= 0; i--)
-    {
-      Relation r = m_relations.get(i);
-      if (r.hasNext())
-      {
-        Tuple t = r.next();
-        m_lastTuple.setElementAt(t, i);
-        return Tuple.makeTuple(m_lastTuple);
-      }
-      else
-      {
-        r.reset();
-        assert r.hasNext();
-        Tuple t = r.next();
-        m_lastTuple.setElementAt(t, i);
-      }
-    }
-    return null;
-  }
 
   @Override
   public void accept(QueryVisitor v) throws VisitorException
   {
     super.acceptNAry(v);
     v.visit(this);
+  }
+  
+  protected class ProductIterator extends NAryRelationIterator
+  {
+    @Override
+    protected Tuple internalNext()
+    {
+      super.initializeIteration();
+      int len = m_relations.size();
+      Vector<Tuple> out_tuple = m_lastTuple;
+      
+      // Update m_lastTuple by "incrementing" the vector
+      for (int i = len - 1; i >= 0; i--)
+      {
+        RelationIterator r = m_iterators.get(i);
+        if (r.hasNext())
+        {
+          Tuple t = r.next();
+          m_lastTuple.setElementAt(t, i);
+          //return Tuple.makeTuple(m_lastTuple);
+          return Tuple.makeTuple(out_tuple);
+        }
+        else
+        {
+          r.reset();
+          assert r.hasNext();
+          Tuple t = r.next();
+          m_lastTuple.setElementAt(t, i);
+        }
+      }
+      return null;
+    }
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new ProductIterator();
   }
 }

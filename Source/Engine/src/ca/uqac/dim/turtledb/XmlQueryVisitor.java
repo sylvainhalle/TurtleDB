@@ -115,10 +115,11 @@ import org.w3c.dom.*;
     Node n = m_doc.createElement("table");
     Node schema = createSchemaNode(r.m_schema);
     n.appendChild(schema);
-    r.reset();
-    while (r.hasNext())
+    RelationIterator it = r.iterator();
+    it.reset();
+    while (it.hasNext())
     {
-      Tuple t = r.next();
+      Tuple t = it.next();
       Node t_node = createTupleNode(t);
       n.appendChild(t_node);
     }

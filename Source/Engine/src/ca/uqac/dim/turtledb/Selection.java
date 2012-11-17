@@ -35,21 +35,7 @@ public class Selection extends UnaryRelation
     // its underlying relation
     return m_relation.getSchema();
   }
-  
-  protected Tuple internalNext()
-  {
-    m_nextTuple = null;
-    while (m_relation.hasNext())
-    {
-      Tuple t = m_relation.next();
-      if (m_condition.evaluate(t))
-      {
-        return t;
-      }
-    }
-    return null;
-  }
-  
+
   public void setCondition(Condition c)
   {
     assert c != null;
@@ -61,6 +47,35 @@ public class Selection extends UnaryRelation
   {
     m_relation.accept(v);
     v.visit(this);
+  }
+  
+  protected class SelectionIterator extends UnaryRelationIterator
+  { 
+    public SelectionIterator()
+    {
+      super();
+    }
+    
+    protected Tuple internalNext()
+    {
+      m_nextTuple = null;
+      while (m_childIterator.hasNext())
+      {
+        Tuple t = m_childIterator.next();
+        if (m_condition.evaluate(t))
+        {
+          return t;
+        }
+      }
+      return null;
+    }
+    
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new SelectionIterator();
   }
 
 }

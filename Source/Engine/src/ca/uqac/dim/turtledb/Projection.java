@@ -28,19 +28,12 @@ public class Projection extends UnaryRelation
     super();
     m_schema = sch;
     m_relation = rel;
-    m_outputTuples = new LinkedList<Tuple>();
   }
 
   @Override
   public Schema getSchema()
   {
     return m_schema;
-  }
-  
-  protected Tuple internalNext()
-  {
-    Tuple t = m_relation.next();
-    return project(t);    
   }
   
   /**
@@ -72,6 +65,27 @@ public class Projection extends UnaryRelation
   {
     m_relation.accept(v);
     v.visit(this);
+  }
+  
+  protected class ProjectionIterator extends UnaryRelationIterator
+  {
+    public ProjectionIterator()
+    {
+      super();
+      m_outputTuples = new LinkedList<Tuple>();
+    }
+    
+    protected Tuple internalNext()
+    {
+      Tuple t = m_childIterator.next();
+      return project(t);    
+    }
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new ProjectionIterator();
   }
 
 }

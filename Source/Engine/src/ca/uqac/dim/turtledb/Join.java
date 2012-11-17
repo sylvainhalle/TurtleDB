@@ -28,7 +28,6 @@ public class Join extends BinaryRelation
   {
     super();
     m_product = new Product();
-    reset();
   }
   
   public Join(Condition c)
@@ -58,26 +57,53 @@ public class Join extends BinaryRelation
     return m_product.tupleCount();
   }
   
-  /**
-   * Implementation of internalNext.
-   */
-  @Override
-  protected Tuple internalNext()
-  {
-    while (m_product.hasNext())
-    {
-      Tuple t = m_product.next();
-      if (m_condition.evaluate(t))
-        return t;
-    }
-    return null;
-  }
+
   
   @Override
   public void accept(QueryVisitor v) throws VisitorException
   {
     super.acceptBinary(v);
     v.visit(this);
+  }
+  
+  protected class JoinIterator extends BinaryRelationIterator
+  {
+    protected RelationIterator m_childIterator;
+    
+    public JoinIterator()
+    {
+      super();
+      m_childIterator = m_product.iterator();
+      reset();
+    }
+    
+    
+    /**
+     * Implementation of internalNext.
+     */
+    @Override
+    protected Tuple internalNext()
+    {
+      while (m_childIterator.hasNext())
+      {
+        Tuple t = m_childIterator.next();
+        if (m_condition.evaluate(t))
+          return t;
+      }
+      return null;
+    }
+    
+    public void reset()
+    {
+      super.reset();
+      m_childIterator.reset();
+    }
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new JoinIterator();
   }
 
 }

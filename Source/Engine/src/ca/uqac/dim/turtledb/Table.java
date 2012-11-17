@@ -47,7 +47,6 @@ public class Table extends Relation
     super();
     m_tuples = new ArrayList<Tuple>();
     m_name = "";
-    reset();
   }
   
   /*package*/ Table(String s)
@@ -144,27 +143,6 @@ public class Table extends Relation
     }
   }
   
-  public Tuple internalNext()
-  {
-    if (m_cursor < m_tuples.size())
-      return m_tuples.get(m_cursor++);
-    else
-      return null;
-  }
-
-  @Override
-  public void remove()
-  {
-    assert false; // We don't do that for the moment
-  }
-
-  @Override
-  public void reset()
-  {
-    super.reset();
-    m_cursor = 0;
-  }
-  
   @Override
   public void accept(QueryVisitor v) throws EmptyQueryVisitor.VisitorException
   {
@@ -182,9 +160,10 @@ public class Table extends Relation
   public void copy(Relation r)
   {
     m_schema = r.getSchema();
-    while (r.hasNext())
+    Iterator<Tuple> i = this.iterator();
+    while (i.hasNext())
     {
-      this.put(r.next());
+      this.put(i.next());
     }
   }
   
@@ -220,6 +199,36 @@ public class Table extends Relation
   public final boolean isLeaf()
   {
     return true;
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new TableIterator();
+  }
+  
+  protected class TableIterator extends RelationIterator
+  {
+    protected Iterator<Tuple> m_iterator;
+    
+    public TableIterator()
+    {
+      m_iterator = m_tuples.iterator();
+    }
+
+    @Override
+    protected Tuple internalNext()
+    {
+      if (m_iterator.hasNext())
+        return m_iterator.next();
+      return null;
+    }
+    
+    public void reset()
+    {
+      super.reset();
+      m_iterator = m_tuples.iterator();
+    }
   }
 
 }

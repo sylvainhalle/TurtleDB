@@ -79,15 +79,6 @@ public class VariableTable extends UnaryRelation
   }
 
   @Override
-  protected Tuple internalNext()
-  {
-    if (m_relation != null)
-      return m_relation.internalNext();
-    else
-      return null;
-  }
-
-  @Override
   public Schema getSchema()
   {
     if (m_relation != null)
@@ -175,4 +166,38 @@ public class VariableTable extends UnaryRelation
     }
     return false;
   }
+  
+  protected class VariableTableIterator extends UnaryRelationIterator
+  {
+    protected RelationIterator m_iterator = null;
+    
+    public VariableTableIterator()
+    {
+      super();
+      reset();
+    }
+    
+    @Override
+    protected Tuple internalNext()
+    {
+      if (m_iterator != null)
+        return m_iterator.internalNext();
+      else
+        return null;
+    }
+    
+    @Override
+    public void reset()
+    {
+      if (m_relation != null)
+        m_iterator = m_relation.iterator();
+    }
+  }
+
+  @Override
+  public RelationIterator iterator()
+  {
+    return new VariableTableIterator();
+  }
+  
 }

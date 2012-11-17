@@ -38,22 +38,10 @@ public abstract class NAryRelation extends Relation
    */
   protected List<Relation> m_relations;
   
-  /**
-   * Determines if the tuple to output is the first one in the iteration
-   */
-  protected boolean m_first;
-  
-  /**
-   * Vector containing the last tuple taken from each table
-   */
-  protected Vector<Tuple> m_lastTuple;
-  
   protected NAryRelation()
   {
     super();
     m_relations = new LinkedList<Relation>();
-    m_lastTuple = new Vector<Tuple>();
-    reset();
   }
   
   @Override
@@ -94,71 +82,105 @@ public abstract class NAryRelation extends Relation
       r.accept(v);
   }
   
-  protected void initializeIteration()
+
+  
+  protected abstract class NAryRelationIterator extends RelationIterator
   {
-    int len = m_relations.size();
-    if (m_first)
+    /**
+     * Determines if the tuple to output is the first one in the iteration
+     */
+    protected boolean m_first;
+    
+    /**
+     * Vector containing the last tuple taken from each table
+     */
+    protected Vector<Tuple> m_lastTuple;
+    
+    /**
+     * Iterators on each relation
+     */
+    protected Vector<RelationIterator> m_iterators;
+    
+    public NAryRelationIterator()
     {
-      m_first = false;
-      // If first tuple to output, get first tuple of every table
-      // and fill m_lastTuple with them
-      for (int i = 0; i < len; i++)
+      super();
+      m_lastTuple = new Vector<Tuple>();
+      m_iterators = new Vector<RelationIterator>();
+      for (Relation r : m_relations)
       {
-        Relation r = m_relations.get(i);
-        if (r.hasNext())
+        m_iterators.addElement(r.iterator());
+      }
+      reset();
+    }
+    
+    protected void initializeIteration()
+    {
+      int len = m_iterators.size();
+      if (m_first)
+      {
+        m_first = false;
+        // If first tuple to output, get first tuple of every table
+        // and fill m_lastTuple with them
+        for (int i = 0; i < len; i++)
         {
-          Tuple t = r.next();
-          m_lastTuple.insertElementAt(t, i);
-        }
-        else
-        {
-          m_lastTuple.insertElementAt(null, i);
+          RelationIterator r = m_iterators.get(i);
+          if (r.hasNext())
+          {
+            Tuple t = r.next();
+            m_lastTuple.insertElementAt(t, i);
+          }
+          else
+          {
+            m_lastTuple.insertElementAt(null, i);
+          }
         }
       }
     }
-  }
-  
-  /**
-   * Returns the smallest tuple in the vector of tuples, and
-   * increments the relation that produced it
-   * @return The smallest tuple
-   */
-  protected Tuple incrementSmallestTuple()
-  {
-    int len = m_relations.size();
-    Tuple smallest_tuple = null;
-    int smallest_index = -1;
-    for (int i = len - 1; i >= 0; i--)
+
+    /**
+     * Returns the smallest tuple in the vector of tuples, and
+     * increments the relation that produced it
+     * @return The smallest tuple
+     */
+    protected Tuple incrementSmallestTuple()
     {
-      Tuple t = m_lastTuple.get(i);
-      if (t == null)
-        continue;
-      if (smallest_tuple == null || smallest_tuple.compareTo(t) < 0)
+      int len = m_relations.size();
+      Tuple smallest_tuple = null;
+      int smallest_index = -1;
+      for (int i = len - 1; i >= 0; i--)
       {
-        smallest_tuple = t;
-        smallest_index = i;
+        Tuple t = m_lastTuple.get(i);
+        if (t == null)
+          continue;
+        if (smallest_tuple == null || smallest_tuple.compareTo(t) < 0)
+        {
+          smallest_tuple = t;
+          smallest_index = i;
+        }
       }
+      if (smallest_index == -1)
+        return null;
+      RelationIterator r = m_iterators.get(smallest_index);
+      if (r.hasNext())
+      {
+        Tuple next_t = r.next();
+        m_lastTuple.setElementAt(next_t, smallest_index);
+      }
+      else
+      {
+        m_lastTuple.setElementAt(null, smallest_index);
+      }
+      return smallest_tuple;    
     }
-    if (smallest_index == -1)
-      return null;
-    Relation r = m_relations.get(smallest_index);
-    if (r.hasNext())
+    
+    @Override
+    public void reset()
     {
-      Tuple next_t = r.next();
-      m_lastTuple.setElementAt(next_t, smallest_index);
+      super.reset();
+      for (RelationIterator r : m_iterators)
+        r.reset();
+      m_first = true;
     }
-    else
-    {
-      m_lastTuple.setElementAt(null, smallest_index);
-    }
-    return smallest_tuple;    
   }
   
-  @Override
-  public void reset()
-  {
-    for (Relation r : m_relations)
-      r.reset();
-    m_first = true;
-  }
 }

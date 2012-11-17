@@ -59,5 +59,10 @@ public abstract class BinaryRelation extends Relation
   {
     return m_left.tupleCount() + m_right.tupleCount();
   }
+  
+  protected abstract class BinaryRelationIterator extends RelationIterator
+  {
+    
+  }
 
 }

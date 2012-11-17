@@ -180,7 +180,6 @@ public class Engine
       // Computes the result and copies it into a new table
       Relation to_add;
       Table result = new Table();
-      pq.reset(); // Important: reset the iterator
       result.copy(pq);
       to_add = result;
       // If relation is a fragment, affix the fragment's label to the computed result
