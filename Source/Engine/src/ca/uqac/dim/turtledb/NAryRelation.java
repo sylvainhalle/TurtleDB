@@ -115,10 +115,18 @@ public abstract class NAryRelation extends Relation
     
     protected void initializeIteration()
     {
-      int len = m_iterators.size();
-      if (m_first)
+      /*if (m_first)
       {
         m_first = false;
+        int len = m_iterators.size();
+        for (int i = 0; i < len; i++)
+        {
+          m_lastTuple.add(new Tuple());
+        }
+      }*/
+      int len = m_iterators.size();
+      //if (m_first)
+      //{
         // If first tuple to output, get first tuple of every table
         // and fill m_lastTuple with them
         for (int i = 0; i < len; i++)
@@ -134,7 +142,7 @@ public abstract class NAryRelation extends Relation
             m_lastTuple.insertElementAt(null, i);
           }
         }
-      }
+      //}
     }
 
     /**

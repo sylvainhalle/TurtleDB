@@ -47,31 +47,37 @@ public class Product extends NAryRelation
   {
     @Override
     protected Tuple internalNext()
-    {
-      super.initializeIteration();
-      int len = m_relations.size();
-      Vector<Tuple> out_tuple = m_lastTuple;
-      
-      // Update m_lastTuple by "incrementing" the vector
-      for (int i = len - 1; i >= 0; i--)
+    { 
+      if (m_first)
       {
-        RelationIterator r = m_iterators.get(i);
-        if (r.hasNext())
+        m_first = false;
+        super.initializeIteration();
+      }
+      else
+      {  
+        int len = m_relations.size();
+        // Update m_lastTuple by "incrementing" the vector
+        for (int i = len - 1; i >= 0; i--)
         {
-          Tuple t = r.next();
-          m_lastTuple.setElementAt(t, i);
-          //return Tuple.makeTuple(m_lastTuple);
-          return Tuple.makeTuple(out_tuple);
-        }
-        else
-        {
-          r.reset();
-          assert r.hasNext();
-          Tuple t = r.next();
-          m_lastTuple.setElementAt(t, i);
+          RelationIterator r = m_iterators.get(i);
+          if (r.hasNext())
+          {
+            Tuple t = r.next();
+            m_lastTuple.setElementAt(t, i);
+            break;
+          }
+          else
+          {
+            if (i == 0)
+              return null; // We exhausted the iteration
+            r.reset();
+            assert r.hasNext();
+            Tuple t = r.next();
+            m_lastTuple.setElementAt(t, i);
+          }
         }
       }
-      return null;
+      return Tuple.makeTuple(m_lastTuple);
     }
   }
 
