@@ -63,6 +63,7 @@ public class Product extends NAryRelation
           if (r.hasNext())
           {
             Tuple t = r.next();
+            assert t != null;
             m_lastTuple.setElementAt(t, i);
             break;
           }
@@ -73,6 +74,7 @@ public class Product extends NAryRelation
             r.reset();
             assert r.hasNext();
             Tuple t = r.next();
+            assert t != null;
             m_lastTuple.setElementAt(t, i);
           }
         }

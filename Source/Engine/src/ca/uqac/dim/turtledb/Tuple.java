@@ -199,6 +199,8 @@ public class Tuple implements Comparable<Tuple>
     Tuple t = new Tuple();    
     for (Tuple tt : v)
     {
+      if (tt == null)
+        return null;
       t.putAll(tt);
     }
     return t;

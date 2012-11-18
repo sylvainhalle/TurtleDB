@@ -56,6 +56,16 @@ public class Table extends Relation
   }
   
   /**
+   * Constructor by copy
+   * @param r
+   */
+  public Table(Relation r)
+  {
+    this();
+    copy(r);
+  }
+  
+  /**
    * Sets a name for the table. It is preferred to create a table
    * with a name directly through the constructor, as using this method
    * implies changing the table's name into every attribute of every
