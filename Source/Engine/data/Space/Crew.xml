@@ -1,0 +1,4608 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<relation>
+  <table>
+    <!-- The relation's name -->
+    <name>Crew</name>
+    
+    <!-- The relation's schema -->
+    <schema>
+      <attribute><!-- Astronaut name -->
+        <name>Astronaut</name>
+      </attribute>
+      <attribute><!-- Astronaut's role -->
+        <name>Role</name>
+      </attribute>
+      <attribute><!-- Mission -->
+        <name>Mission</name>
+      </attribute>
+    </schema>
+    
+    <!-- Mercury -->
+    <tuple>
+      <Astronaut>Alan Shepard</Astronaut>
+      <Mission>Mercury Freedom 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Virgil Grissom</Astronaut>
+      <Mission>Mercury Liberty Bell 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Glenn</Astronaut>
+      <Mission>Mercury Friendship 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Carpenter</Astronaut>
+      <Mission>Mercury Aurora 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Walter Schirra</Astronaut>
+      <Mission>Mercury Sigma 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gordon Cooper</Astronaut>
+      <Mission>Mercury Faith 7</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    
+    <!-- Gemini -->
+    <tuple>
+      <Astronaut>Virgil Grissom</Astronaut>
+      <Mission>Gemini III</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>Gemini III</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James McDivitt</Astronaut>
+      <Mission>Gemini IV</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ed White</Astronaut>
+      <Mission>Gemini IV</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gordon Cooper</Astronaut>
+      <Mission>Gemini V</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pete Conrad</Astronaut>
+      <Mission>Gemini V</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Borman</Astronaut>
+      <Mission>Gemini VII</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jim Lovell</Astronaut>
+      <Mission>Gemini VII</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Walter Schirra</Astronaut>
+      <Mission>Gemini VI-A</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tom Stafford</Astronaut>
+      <Mission>Gemini VI-A</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Neil Armstrong</Astronaut>
+      <Mission>Gemini VIII</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dave Scott</Astronaut>
+      <Mission>Gemini VIII</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tom Stafford</Astronaut>
+      <Mission>Gemini IX-A</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gene Cernan</Astronaut>
+      <Mission>Gemini IX-A</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>Gemini X</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Collins</Astronaut>
+      <Mission>Gemini X</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pete Conrad</Astronaut>
+      <Mission>Gemini XI</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Gordon</Astronaut>
+      <Mission>Gemini XI</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jim Lovell</Astronaut>
+      <Mission>Gemini XII</Mission>
+      <Role>Command Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Buzz Aldrin</Astronaut>
+      <Mission>Gemini XII</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+  
+    <!-- Apollo -->
+    <tuple>
+      <Astronaut>Walter Schirra</Astronaut>
+      <Mission>Apollo 7</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Walter Cunningham</Astronaut>
+      <Mission>Apollo 7</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donn Eisele</Astronaut>
+      <Mission>Apollo 7</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Borman</Astronaut>
+      <Mission>Apollo 8</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Anders</Astronaut>
+      <Mission>Apollo 8</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jim Lovell</Astronaut>
+      <Mission>Apollo 8</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James McDivitt</Astronaut>
+      <Mission>Apollo 9</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Russell Schweickart</Astronaut>
+      <Mission>Apollo 9</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dave Scott</Astronaut>
+      <Mission>Apollo 9</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tom Stafford</Astronaut>
+      <Mission>Apollo 10</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gene Cernan</Astronaut>
+      <Mission>Apollo 10</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>Apollo 10</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Neil Armstrong</Astronaut>
+      <Mission>Apollo 11</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Buzz Aldrin</Astronaut>
+      <Mission>Apollo 11</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Collins</Astronaut>
+      <Mission>Apollo 11</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pete Conrad</Astronaut>
+      <Mission>Apollo 12</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Alan Bean</Astronaut>
+      <Mission>Apollo 12</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Gordon</Astronaut>
+      <Mission>Apollo 12</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jim Lovell</Astronaut>
+      <Mission>Apollo 13</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fred Haise</Astronaut>
+      <Mission>Apollo 13</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jack Sweigert</Astronaut>
+      <Mission>Apollo 13</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Alan Shepard</Astronaut>
+      <Mission>Apollo 14</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Edgar Mitchell</Astronaut>
+      <Mission>Apollo 14</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stuart Roosa</Astronaut>
+      <Mission>Apollo 14</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dave Scott</Astronaut>
+      <Mission>Apollo 15</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Irwin</Astronaut>
+      <Mission>Apollo 15</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Alfred Worden</Astronaut>
+      <Mission>Apollo 15</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>Apollo 16</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charlie Duke</Astronaut>
+      <Mission>Apollo 16</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ken Mattingly</Astronaut>
+      <Mission>Apollo 16</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gene Cernan</Astronaut>
+      <Mission>Apollo 17</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Harrison Schmitt</Astronaut>
+      <Mission>Apollo 17</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Evans</Astronaut>
+      <Mission>Apollo 17</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Virgil Grissom</Astronaut>
+      <Mission>Apollo 1</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Roger Chaffee</Astronaut>
+      <Mission>Apollo 1</Mission>
+      <Role>Lunar Module Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ed White</Astronaut>
+      <Mission>Apollo 1</Mission>
+      <Role>Command Module Pilot</Role>
+    </tuple>
+    
+    <!-- Space Shuttle -->
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>STS-1</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Crippen</Astronaut>
+      <Mission>STS-1</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joe Engle</Astronaut>
+      <Mission>STS-2</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Truly</Astronaut>
+      <Mission>STS-2</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jack Lousma</Astronaut>
+      <Mission>STS-3</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gordon Fullerton</Astronaut>
+      <Mission>STS-3</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ken Mattingly</Astronaut>
+      <Mission>STS-4</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Henry Hartsfield</Astronaut>
+      <Mission>STS-4</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Vance Brand</Astronaut>
+      <Mission>STS-5</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Overmyer</Astronaut>
+      <Mission>STS-5</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. Allen</Astronaut>
+      <Mission>STS-5</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William B. Lenoir</Astronaut>
+      <Mission>STS-5</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Paul Weitz</Astronaut>
+      <Mission>STS-6</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Karol Bobko</Astronaut>
+      <Mission>STS-6</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald H. Peterson</Astronaut>
+      <Mission>STS-6</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-6</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Crippen</Astronaut>
+      <Mission>STS-7</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Hauck</Astronaut>
+      <Mission>STS-7</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Fabian</Astronaut>
+      <Mission>STS-7</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sally Ride</Astronaut>
+      <Mission>STS-7</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Norman Thagard</Astronaut>
+      <Mission>STS-7</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Truly</Astronaut>
+      <Mission>STS-8</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Brandenstein</Astronaut>
+      <Mission>STS-8</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Gardner</Astronaut>
+      <Mission>STS-8</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guion Bluford</Astronaut>
+      <Mission>STS-8</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>W. Thornton</Astronaut>
+      <Mission>STS-8</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Young</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brewster Shaw</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Owen Garriott</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Parker</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ulf Merbold</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lichtenberg</Astronaut>
+      <Mission>STS-9</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Vance Brand</Astronaut>
+      <Mission>STS-41-B</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gibson</Astronaut>
+      <Mission>STS-41-B</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bruce McCandless</Astronaut>
+      <Mission>STS-41-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald McNair</Astronaut>
+      <Mission>STS-41-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Stewart</Astronaut>
+      <Mission>STS-41-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Crippen</Astronaut>
+      <Mission>STS-41-C</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Francis "Dick" Scobee</Astronaut>
+      <Mission>STS-41-C</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>George Nelson</Astronaut>
+      <Mission>STS-41-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>van Hoften</Astronaut>
+      <Mission>STS-41-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terry Hart</Astronaut>
+      <Mission>STS-41-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Henry Hartsfield</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Coats</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mullane</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Hawley</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Judith Resnik</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Walker</Astronaut>
+      <Mission>STS-41-D</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Crippen</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jon McBride</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kathryn D. Sullivan</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sally Ride</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Leestma</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marc Garneau</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scully-Power</Astronaut>
+      <Mission>STS-41-G</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Hauck</Astronaut>
+      <Mission>STS-51-A</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Walker</Astronaut>
+      <Mission>STS-51-A</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Fisher</Astronaut>
+      <Mission>STS-51-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Gardner</Astronaut>
+      <Mission>STS-51-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. Allen</Astronaut>
+      <Mission>STS-51-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ken Mattingly</Astronaut>
+      <Mission>STS-51-C</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Loren Shriver</Astronaut>
+      <Mission>STS-51-C</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellison Onizuka</Astronaut>
+      <Mission>STS-51-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Buchli</Astronaut>
+      <Mission>STS-51-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Payton MSE</Astronaut>
+      <Mission>STS-51-C</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Karol Bobko</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. E. Williams</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rhea Seddon</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. David Griggs</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Hoffman</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Walker</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Garn</Astronaut>
+      <Mission>STS-51-D</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Overmyer</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Don Lind</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Norman Thagard</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>W. Thornton</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>van den Berg</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wang</Astronaut>
+      <Mission>STS-51-B</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Brandenstein</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Creighton</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Shannon Lucid</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Fabian</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Nagel</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Baudry</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Al Saud</Astronaut>
+      <Mission>STS-51-G</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gordon Fullerton</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Roy Bridges</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Anthony England</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Karl Henize</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Acton</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bartoe</Astronaut>
+      <Mission>STS-51-F</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joe Engle</Astronaut>
+      <Mission>STS-51-I</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Covey</Astronaut>
+      <Mission>STS-51-I</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>van Hoften</Astronaut>
+      <Mission>STS-51-I</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Lounge</Astronaut>
+      <Mission>STS-51-I</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>W. Fisher</Astronaut>
+      <Mission>STS-51-I</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Karol Bobko</Astronaut>
+      <Mission>STS-51-J</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Grabe</Astronaut>
+      <Mission>STS-51-J</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Hilmers</Astronaut>
+      <Mission>STS-51-J</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Stewart</Astronaut>
+      <Mission>STS-51-J</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pailes MSE</Astronaut>
+      <Mission>STS-51-J</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Henry Hartsfield</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Nagel</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bonnie Dunbar</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Buchli</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guion Bluford</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Furrer</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Messerschmid</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wubbo Ockels</Astronaut>
+      <Mission>STS-61-A</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brewster Shaw</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bryan O'Connor</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mary Cleave</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sherwood Spring</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Neri</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Walker</Astronaut>
+      <Mission>STS-61-B</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gibson</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Bolden</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Hawley</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. Nelson</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Cenker</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>B. Nelson</Astronaut>
+      <Mission>STS-61-C</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>1 m 13 s</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Francis "Dick" Scobee</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Smith</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellison Onizuka</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Judith Resnik</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald McNair</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Christa McAuliffe</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jarvis</Astronaut>
+      <Mission>STS-51-L</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Hauck</Astronaut>
+      <Mission>STS-26</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Covey</Astronaut>
+      <Mission>STS-26</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Lounge</Astronaut>
+      <Mission>STS-26</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>George Nelson</Astronaut>
+      <Mission>STS-26</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Hilmers</Astronaut>
+      <Mission>STS-26</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gibson</Astronaut>
+      <Mission>STS-27</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. Gardner</Astronaut>
+      <Mission>STS-27</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mullane</Astronaut>
+      <Mission>STS-27</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-27</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Shepherd</Astronaut>
+      <Mission>STS-27</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Coats</Astronaut>
+      <Mission>STS-29</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Blaha</Astronaut>
+      <Mission>STS-29</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Bagian</Astronaut>
+      <Mission>STS-29</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Buchli</Astronaut>
+      <Mission>STS-29</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Springer</Astronaut>
+      <Mission>STS-29</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Walker</Astronaut>
+      <Mission>STS-30</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Grabe</Astronaut>
+      <Mission>STS-30</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Norman Thagard</Astronaut>
+      <Mission>STS-30</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mary Cleave</Astronaut>
+      <Mission>STS-30</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark Lee</Astronaut>
+      <Mission>STS-30</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brewster Shaw</Astronaut>
+      <Mission>STS-28</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>R. Richards</Astronaut>
+      <Mission>STS-28</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> James Adamson</Astronaut>
+      <Mission>STS-28</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Leestma</Astronaut>
+      <Mission>STS-28</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-28</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. E. Williams</Astronaut>
+      <Mission>STS-34</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael McCulley</Astronaut>
+      <Mission>STS-34</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-34</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Shannon Lucid</Astronaut>
+      <Mission>STS-34</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>E. Baker</Astronaut>
+      <Mission>STS-34</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory</Astronaut>
+      <Mission>STS-33</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Blaha</Astronaut>
+      <Mission>STS-33</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-33</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sonny Carter</Astronaut>
+      <Mission>STS-33</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thornton</Astronaut>
+      <Mission>STS-33</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Brandenstein</Astronaut>
+      <Mission>STS-32</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-32</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bonnie Dunbar</Astronaut>
+      <Mission>STS-32</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Low</Astronaut>
+      <Mission>STS-32</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marsha Ivins</Astronaut>
+      <Mission>STS-32</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Creighton</Astronaut>
+      <Mission>STS-36</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Casper</Astronaut>
+      <Mission>STS-36</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mullane</Astronaut>
+      <Mission>STS-36</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Hilmers</Astronaut>
+      <Mission>STS-36</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pierre Thuot</Astronaut>
+      <Mission>STS-36</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Loren Shriver</Astronaut>
+      <Mission>STS-31</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Bolden</Astronaut>
+      <Mission>STS-31</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Hawley</Astronaut>
+      <Mission>STS-31</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bruce McCandless</Astronaut>
+      <Mission>STS-31</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kathryn D. Sullivan</Astronaut>
+      <Mission>STS-31</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>R. Richards</Astronaut>
+      <Mission>STS-41</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert D. Cabana</Astronaut>
+      <Mission>STS-41</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Shepherd</Astronaut>
+      <Mission>STS-41</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bruce Melnick</Astronaut>
+      <Mission>STS-41</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas Akers</Astronaut>
+      <Mission>STS-41</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Covey</Astronaut>
+      <Mission>STS-38</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Culbertson</Astronaut>
+      <Mission>STS-38</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Springer</Astronaut>
+      <Mission>STS-38</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl Meade</Astronaut>
+      <Mission>STS-38</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Gemar</Astronaut>
+      <Mission>STS-38</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Vance Brand</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. Gardner</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Hoffman</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Lounge</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Parker</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Durrance</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Parise</Astronaut>
+      <Mission>STS-35</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Nagel</Astronaut>
+      <Mission>STS-37</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cameron</Astronaut>
+      <Mission>STS-37</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-37</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Jerome Apt</Astronaut>
+      <Mission>STS-37</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linda Godwin</Astronaut>
+      <Mission>STS-37</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Coats</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Blaine Hammond</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guion Bluford</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory Harbaugh</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Hieb</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald McMonagle</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles "Lacy" Veach</Astronaut>
+      <Mission>STS-39</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bryan O'Connor</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sidney Gutierrez</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Bagian</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tamara Jernigan</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rhea Seddon</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gaffney</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hughes-Fulford</Astronaut>
+      <Mission>STS-40</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Blaha</Astronaut>
+      <Mission>STS-43</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Baker</Astronaut>
+      <Mission>STS-43</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Shannon Lucid</Astronaut>
+      <Mission>STS-43</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> James Adamson</Astronaut>
+      <Mission>STS-43</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Low</Astronaut>
+      <Mission>STS-43</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Creighton</Astronaut>
+      <Mission>STS-48</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Reightler</Astronaut>
+      <Mission>STS-48</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Buchli</Astronaut>
+      <Mission>STS-48</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Gemar</Astronaut>
+      <Mission>STS-48</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-48</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terence Henricks</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mario Runco</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hennen</Astronaut>
+      <Mission>STS-44</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Grabe</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Oswald</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Norman Thagard</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Hilmers</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Readdy</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Roberta Bondar</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ulf Merbold</Astronaut>
+      <Mission>STS-42</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Bolden</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brian Duffy</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kathryn D. Sullivan</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Leestma</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Foale</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lichtenberg</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frimout</Astronaut>
+      <Mission>STS-45</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Brandenstein</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Chilton</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pierre Thuot</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thornton</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Hieb</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas Akers</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bruce Melnick</Astronaut>
+      <Mission>STS-49</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>R. Richards</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Bowersox</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bonnie Dunbar</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>E. Baker</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl Meade</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>DeLucas</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Trinh</Astronaut>
+      <Mission>STS-50</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Loren Shriver</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Allen</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Hoffman</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Claude Nicollier</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marsha Ivins</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franco Malerba</Astronaut>
+      <Mission>STS-46</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gibson</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark Lee</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jan Davis</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Jerome Apt</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mae Jemison</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mohri</Astronaut>
+      <Mission>STS-47</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Baker</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles "Lacy" Veach</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Shepherd</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tamara Jernigan</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steve MacLean</Astronaut>
+      <Mission>STS-52</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Walker</Astronaut>
+      <Mission>STS-53</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert D. Cabana</Astronaut>
+      <Mission>STS-53</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guion Bluford</Astronaut>
+      <Mission>STS-53</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-53</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael R. Clifford</Astronaut>
+      <Mission>STS-53</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Casper</Astronaut>
+      <Mission>STS-54</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald McMonagle</Astronaut>
+      <Mission>STS-54</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mario Runco</Astronaut>
+      <Mission>STS-54</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory Harbaugh</Astronaut>
+      <Mission>STS-54</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-54</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cameron</Astronaut>
+      <Mission>STS-56</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Oswald</Astronaut>
+      <Mission>STS-56</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Foale</Astronaut>
+      <Mission>STS-56</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cockrell</Astronaut>
+      <Mission>STS-56</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellen Ochoa</Astronaut>
+      <Mission>STS-56</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Nagel</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terence Henricks</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Precourt</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bernard Harris</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Walter</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Schlegel</Astronaut>
+      <Mission>STS-55</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Grabe</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brian Duffy</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Low</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sherlock</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peter Wisoff</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. E. Voss</Astronaut>
+      <Mission>STS-57</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Culbertson</Astronaut>
+      <Mission>STS-51</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Readdy</Astronaut>
+      <Mission>STS-51</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Newman</Astronaut>
+      <Mission>STS-51</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Bursch</Astronaut>
+      <Mission>STS-51</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl E. Walz</Astronaut>
+      <Mission>STS-51</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Blaha</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Searfoss</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rhea Seddon</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William McArthur</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Wolf</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Shannon Lucid</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fettman</Astronaut>
+      <Mission>STS-58</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Covey</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Bowersox</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thornton</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Claude Nicollier</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Hoffman</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas Akers</Astronaut>
+      <Mission>STS-61</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Bolden</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Reightler</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jan Davis</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Sega</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Krikalev</Astronaut>
+      <Mission>STS-60</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Casper</Astronaut>
+      <Mission>STS-62</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Allen</Astronaut>
+      <Mission>STS-62</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pierre Thuot</Astronaut>
+      <Mission>STS-62</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Gemar</Astronaut>
+      <Mission>STS-62</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marsha Ivins</Astronaut>
+      <Mission>STS-62</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sidney Gutierrez</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Chilton</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linda Godwin</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Jerome Apt</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael R. Clifford</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas David Jones</Astronaut>
+      <Mission>STS-59</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert D. Cabana</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Halsell</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Hieb</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl E. Walz</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Leroy Chiao</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Thomas</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mukai</Astronaut>
+      <Mission>STS-65</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>R. Richards</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Blaine Hammond</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Linenger</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl Meade</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark Lee</Astronaut>
+      <Mission>STS-64</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Baker</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terrence Wilcutt</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas David Jones</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Smith</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Bursch</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peter Wisoff</Astronaut>
+      <Mission>STS-68</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald McMonagle</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellen Ochoa</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Parazynski</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joseph Tanner</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Clervoy</Astronaut>
+      <Mission>STS-66</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Collins</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Foale</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. E. Voss</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bernard Harris</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Titov</Astronaut>
+      <Mission>STS-63</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Oswald</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>W. Gregory</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tamara Jernigan</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Grunsfeld</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wendy Lawrence</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Parise</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Durrance</Astronaut>
+      <Mission>STS-67</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gibson</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Precourt</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>E. Baker</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bonnie Dunbar</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory Harbaugh</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Solovyev Mir</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Budarin Mir</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Norman Thagard</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dezhurov</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Strekalov</Astronaut>
+      <Mission>STS-71</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terence Henricks</Astronaut>
+      <Mission>STS-70</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Kregel</Astronaut>
+      <Mission>STS-70</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Nancy Currie</Astronaut>
+      <Mission>STS-70</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Thomas</Astronaut>
+      <Mission>STS-70</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mary Weber</Astronaut>
+      <Mission>STS-70</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Walker</Astronaut>
+      <Mission>STS-69</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cockrell</Astronaut>
+      <Mission>STS-69</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-69</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Newman</Astronaut>
+      <Mission>STS-69</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Gernhardt</Astronaut>
+      <Mission>STS-69</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Bowersox</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kent Rominger</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thornton</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Catherine Coleman</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Lopez-Alegria</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Leslie</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sacco</Astronaut>
+      <Mission>STS-73</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cameron</Astronaut>
+      <Mission>STS-74</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Halsell</Astronaut>
+      <Mission>STS-74</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-74</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William McArthur</Astronaut>
+      <Mission>STS-74</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chris Hadfield</Astronaut>
+      <Mission>STS-74</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brian Duffy</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brent Jett</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Leroy Chiao</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Daniel T. Barry</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wakata</Astronaut>
+      <Mission>STS-72</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Allen</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Horowitz</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Hoffman</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Cheli</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Claude Nicollier</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guidoni</Astronaut>
+      <Mission>STS-75</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Chilton</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Searfoss</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linda Godwin</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael R. Clifford</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ronald Sega</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lucid Mir</Astronaut>
+      <Mission>STS-76</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Casper</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Bursch</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mario Runco</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marc Garneau</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Thomas</Astronaut>
+      <Mission>STS-77</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terence Henricks</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Kregel</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Linnehan</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Brady</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Favier</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Thirsk</Astronaut>
+      <Mission>STS-78</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Readdy</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terrence Wilcutt</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas Akers</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Jerome Apt</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl E. Walz</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Blaha Mir</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Shannon Lucid</Astronaut>
+      <Mission>STS-79</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cockrell</Astronaut>
+      <Mission>STS-80</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kent Rominger</Astronaut>
+      <Mission>STS-80</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tamara Jernigan</Astronaut>
+      <Mission>STS-80</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas David Jones</Astronaut>
+      <Mission>STS-80</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Story Musgrave</Astronaut>
+      <Mission>STS-80</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Baker</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brent Jett</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Grunsfeld</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marsha Ivins</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peter Wisoff</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linenger Mir</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Blaha</Astronaut>
+      <Mission>STS-81</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Bowersox</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Horowitz</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark Lee</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Hawley</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gregory Harbaugh</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Smith</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joseph Tanner</Astronaut>
+      <Mission>STS-82</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Halsell</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Still</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. E. Voss</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Thomas</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Gernhardt</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Crouch</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linteris</Astronaut>
+      <Mission>STS-83</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Precourt</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Collins</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carlos Noriega</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Edward Lu</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Clervoy</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kondakova</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Foale Mir</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Linenger</Astronaut>
+      <Mission>STS-84</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Halsell</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Still</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. E. Voss</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Thomas</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Gernhardt</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Crouch</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linteris</Astronaut>
+      <Mission>STS-94</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kent Rominger</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jan Davis</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Robinson</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Curbeam</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bjarni Tryggvason</Astronaut>
+      <Mission>STS-85</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Bloomfield</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Titov</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Parazynski</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chrétien</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wendy Lawrence</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wolf Mir</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Foale</Astronaut>
+      <Mission>STS-86</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Kregel</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Lindsey</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kalpana Chawla</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Doi</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kadenyuk</Astronaut>
+      <Mission>STS-87</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terrence Wilcutt</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joe Edwards</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bonnie Dunbar</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Anderson</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Reilly</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sharipov</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Thomas Mir</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Wolf</Astronaut>
+      <Mission>STS-89</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Searfoss</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Altman</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Linnehan</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Williams</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kathryn Hire</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Buckey</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pawelczyk</Astronaut>
+      <Mission>STS-90</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Precourt</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dominic Gorie</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wendy Lawrence</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Janet Kavandi</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ryumin</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Thomas</Astronaut>
+      <Mission>STS-91</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Lindsey</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Robinson</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Parazynski</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Duque</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mukai</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Glenn</Astronaut>
+      <Mission>STS-95</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert D. Cabana</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Sturckow</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Nancy Currie</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Newman</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Krikalev</Astronaut>
+      <Mission>STS-88</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kent Rominger</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rick Husband</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellen Ochoa</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tamara Jernigan</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Daniel T. Barry</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Julie Payette</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tokarev</Astronaut>
+      <Mission>STS-96</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Collins</Astronaut>
+      <Mission>STS-93</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Ashby</Astronaut>
+      <Mission>STS-93</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Hawley</Astronaut>
+      <Mission>STS-93</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Catherine Coleman</Astronaut>
+      <Mission>STS-93</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tognini</Astronaut>
+      <Mission>STS-93</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Kelly</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Smith</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Foale</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Grunsfeld</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Claude Nicollier</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Clervoy</Astronaut>
+      <Mission>STS-103</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kevin Kregel</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dominic Gorie</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Janet Kavandi</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. E. Voss</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mohri</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thiele</Astronaut>
+      <Mission>STS-99</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Halsell</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Horowitz</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mary Weber</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. Williams</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Usachev</Astronaut>
+      <Mission>STS-101</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Terrence Wilcutt</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Altman</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel C. Burbank</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Edward Lu</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mastracchio</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Malenchenko</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Morukov</Astronaut>
+      <Mission>STS-106</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brian Duffy</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pamela Melroy</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wakata</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Leroy Chiao</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peter Wisoff</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Lopez-Alegria</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William McArthur</Astronaut>
+      <Mission>STS-92</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brent Jett</Astronaut>
+      <Mission>STS-97</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Bloomfield</Astronaut>
+      <Mission>STS-97</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joseph Tanner</Astronaut>
+      <Mission>STS-97</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carlos Noriega</Astronaut>
+      <Mission>STS-97</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marc Garneau</Astronaut>
+      <Mission>STS-97</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cockrell</Astronaut>
+      <Mission>STS-98</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark L. Polansky</Astronaut>
+      <Mission>STS-98</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Curbeam</Astronaut>
+      <Mission>STS-98</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Thomas David Jones</Astronaut>
+      <Mission>STS-98</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marsha Ivins</Astronaut>
+      <Mission>STS-98</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. Kelly</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Thomas</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>P. Richards</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Usachev</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Shepherd</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Gidzenko</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Krikalev</Astronaut>
+      <Mission>STS-102</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kent Rominger</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Ashby</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chris Hadfield</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Parazynski</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John L. Phillips</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Guidoni</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lonchakov</Astronaut>
+      <Mission>STS-100</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Lindsey</Astronaut>
+      <Mission>STS-104</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles O. Hobaugh</Astronaut>
+      <Mission>STS-104</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Gernhardt</Astronaut>
+      <Mission>STS-104</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Reilly</Astronaut>
+      <Mission>STS-104</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Janet Kavandi</Astronaut>
+      <Mission>STS-104</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Horowitz</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Sturckow</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut> Daniel T. Barry</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Patrick G. Forrester</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Culbertson</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tyurin</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dezhurov</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Usachev</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. S. Voss</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Susan Helms</Astronaut>
+      <Mission>STS-105</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dominic Gorie</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Kelly</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Linda Godwin</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel M. Tani</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Onufrienko</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl E. Walz</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Bursch</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frank Culbertson</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Tyurin</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dezhurov</Astronaut>
+      <Mission>STS-108</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Altman</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Duane G. Carey</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Grunsfeld</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Nancy Currie</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Newman</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Linnehan</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael J. Massimino</Astronaut>
+      <Mission>STS-109</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Bloomfield</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Frick</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jerry Ross</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Smith</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ellen Ochoa</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lee Morin</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rex J. Walheim</Astronaut>
+      <Mission>STS-110</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Cockrell</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Paul Lockhart</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Franklin Chang-Diaz</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Perrin</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Korzun</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peggy Whitson</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Treshchev</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Onufrienko</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Carl E. Walz</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel Bursch</Astronaut>
+      <Mission>STS-111</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Jeffrey Ashby</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pamela Melroy</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Wolf</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Piers Sellers</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sandra Magnus</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Yurchikhin</Astronaut>
+      <Mission>STS-112</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Wetherbee</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Paul Lockhart</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Lopez-Alegria</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Herrington</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kenneth Bowersox</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Budarin</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald Pettit</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Korzun</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Peggy Whitson</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Treshchev</Astronaut>
+      <Mission>STS-113</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rick Husband</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William Cameron McCool</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Anderson</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brown</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kalpana Chawla</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Laurel Clark</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ramon</Astronaut>
+      <Mission>STS-107</Mission>
+      <Role>Payload Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Collins</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>J. Kelly</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Noguchi</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Robinson</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>A. Thomas</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wendy Lawrence</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles Camarda</Astronaut>
+      <Mission>STS-114</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Lindsey</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Kelly</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fossum</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Piers Sellers</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Lisa Nowak</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephanie Wilson</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Reiter</Astronaut>
+      <Mission>STS-121</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Brent Jett</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ferguson</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joseph Tanner</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Burbank FE</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Heidemarie Stefanyshyn-Piper</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steve MacLean</Astronaut>
+      <Mission>STS-115</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark L. Polansky</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Oefelein</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Patrick</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Robert Curbeam</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fuglesang</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Joan Higginbotham</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Williams</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Reiter</Astronaut>
+      <Mission>STS-116</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Sturckow</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Archambault</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Patrick G. Forrester</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Swanson</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Olivas</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>James Reilly</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Anderson</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Williams</Astronaut>
+      <Mission>STS-117</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>S. Kelly</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles O. Hobaugh</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Caldwell</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mastracchio</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>D. Williams</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Barbara Morgan</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Drew</Astronaut>
+      <Mission>STS-118</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Pamela Melroy</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Zamka</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephanie Wilson</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Parazynski</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wheelock</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Nespoli</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel M. Tani</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Anderson</Astronaut>
+      <Mission>STS-120</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Frick</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Poindexter</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Melvin</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rex J. Walheim</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Schlegel</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Love</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Eyharts</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Daniel M. Tani</Astronaut>
+      <Mission>STS-122</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dominic Gorie</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. H. Johnson</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Behnken</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Foreman</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Linnehan</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Doi</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Reisman</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Eyharts</Astronaut>
+      <Mission>STS-123</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Kelly</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ham</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Nyberg</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Garan</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fossum</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hoshide</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chamitoff</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Reisman</Astronaut>
+      <Mission>STS-124</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ferguson</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Boe</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Donald Pettit</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bowen</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Heidemarie Stefanyshyn-Piper</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kimbrough</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sandra Magnus</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chamitoff</Astronaut>
+      <Mission>STS-126</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Archambault</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Antonelli</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Acaba</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Swanson</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Arnold</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John L. Phillips</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wakata</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sandra Magnus</Astronaut>
+      <Mission>STS-119</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Scott Altman</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. C. Johnson</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Good</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>William McArthur</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>John Grunsfeld</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael J. Massimino</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Feustel</Astronaut>
+      <Mission>STS-125</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Mark L. Polansky</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hurley</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Cassidy</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Julie Payette</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Marshburn</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>David Wolf</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kopra</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wakata</Astronaut>
+      <Mission>STS-127</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Frederick Sturckow</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ford</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Patrick G. Forrester</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hernandez</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Fuglesang</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Olivas</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stott</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kopra</Astronaut>
+      <Mission>STS-128</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Charles O. Hobaugh</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Wilmore</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Melvin</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bresnik</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Foreman</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Satcher</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stott</Astronaut>
+      <Mission>STS-129</Mission>
+      <Role>Landing</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Zamka</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Virts</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Kathryn Hire</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephen Robinson</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Patrick</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Behnken</Astronaut>
+      <Mission>STS-130</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Poindexter</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Dutton</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Richard Mastracchio</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Metcalf-Lindenburger</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stephanie Wilson</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Yamazaki</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>C. Anderson</Astronaut>
+      <Mission>STS-131</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>11d 18h 29m</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ham</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Antonelli</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Reisman</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Good</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bowen</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Piers Sellers</Astronaut>
+      <Mission>STS-132</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Steven Lindsey</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Boe</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Stott</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Drew</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Barratt</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Bowen</Astronaut>
+      <Mission>STS-133</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>M. Kelly</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>G. H. Johnson</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Michael Fincke</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Vittori</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Feustel</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Chamitoff</Astronaut>
+      <Mission>STS-134</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Ferguson</Astronaut>
+      <Mission>STS-135</Mission>
+      <Role>Commander</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Hurley</Astronaut>
+      <Mission>STS-135</Mission>
+      <Role>Pilot</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Sandra Magnus</Astronaut>
+      <Mission>STS-135</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+    <tuple>
+      <Astronaut>Rex J. Walheim</Astronaut>
+      <Mission>STS-135</Mission>
+      <Role>Mission Specialist</Role>
+    </tuple>
+  </table>
+</relation>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<relation>
+  <table>
+    <!-- The relation's name -->
+    <name>Rocket</name>
+    
+    <!-- The relation's schema -->
+    <schema>
+      <attribute><!-- Rocket's name -->
+        <name>Name</name>
+      </attribute>
+      <attribute><!-- Number of stages -->
+        <name>Stages</name>
+      </attribute>
+      <attribute> <!-- Rocket's height (m) -->
+        <name>Height</name>
+      </attribute>
+      <attribute><!-- Payload to low-Earth orbit (kg) -->
+        <name>LEOPayload</name>
+      </attribute>
+    </schema>
+    
+    <!-- NASA classic -->
+    <tuple>
+      <Name>Scout</Name>
+      <Stages>4</Stages>
+      <Height>25</Height>
+      <LEOPayload>150</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Redstone</Name>
+      <Stages>1</Stages>
+      <Height>25</Height>
+      <LEOPayload>0</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Atlas</Name>
+      <Stages>1.5</Stages>
+      <Height>29</Height>
+      <LEOPayload>1360</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Titan II</Name>
+      <Stages>2</Stages>
+      <Height>33</Height>
+      <LEOPayload>3600</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Saturn I-B</Name>
+      <Stages>3</Stages>
+      <Height>43</Height>
+      <LEOPayload>21000</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Saturn V</Name>
+      <Stages>3</Stages>
+      <Height>110</Height>
+      <LEOPayload>120000</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Atlantis</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Columbia</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Endeavour</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Challenger</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Discovery</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Enterprise</Name>
+      <Stages>2</Stages>
+      <Height>56</Height>
+      <LEOPayload>24400</LEOPayload>
+    </tuple>
+    
+    <!-- SpaceX -->
+    <tuple>
+      <Name>Falcon 1</Name>
+      <Stages>2</Stages>
+      <Height>21</Height>
+      <LEOPayload>670</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Falcon 1e</Name>
+      <Stages>2</Stages>
+      <Height>25</Height>
+      <LEOPayload>1010</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Falcon 9</Name>
+      <Stages>2</Stages>
+      <Height>54</Height>
+      <LEOPayload>10450</LEOPayload>
+    </tuple>
+    
+    <!-- USSR -->
+    <tuple>
+      <Name>Proton-K</Name>
+      <Stages>3</Stages>
+      <Height>50</Height>
+      <LEOPayload>19760</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Soyuz</Name>
+      <Stages>2</Stages>
+      <Height>45</Height>
+      <LEOPayload>6450</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>N1</Name>
+      <Stages>5</Stages>
+      <Height>105</Height>
+      <LEOPayload>90000</LEOPayload>
+    </tuple>
+    
+    <!-- France -->
+    <tuple>
+      <Name>Ariane 1</Name>
+      <Stages>4</Stages>
+      <Height>50</Height>
+      <LEOPayload>1400</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Ariane 2</Name>
+      <Stages>3</Stages>
+      <Height>49</Height>
+      <LEOPayload>2175</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Ariane 3</Name>
+      <Stages>3</Stages>
+      <Height>49</Height>
+      <LEOPayload>2700</LEOPayload>
+    </tuple>
+    <tuple>
+      <Name>Ariane 4</Name>
+      <Stages>2</Stages>
+      <Height>58</Height>
+      <LEOPayload>5000</LEOPayload>
+    </tuple>
+  </table>
+</relation>

@@ -1,0 +1,2061 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<relation>
+  <table>
+    <!-- The relation's name -->
+    <name>Astronaut</name>
+    
+    <!-- The relation's schema -->
+    <schema>
+      <attribute><!-- Astronaut's name -->
+        <name>Name</name>
+      </attribute>
+      <attribute><!-- Astronaut's year of birth -->
+        <name>Birth</name>
+      </attribute>
+      <attribute><!-- Astronaut's selection group -->
+        <name>Group</name>
+      </attribute>
+      <attribute><!-- Astronaut's army affiliation -->
+        <name>Affiliation</name>
+      </attribute>
+      <attribute><!-- Astronaut's country -->
+        <name>Nationality</name>
+      </attribute>
+    </schema>
+    
+    <!-- Astronaut Group 1: "The Original Seven" -->
+    <tuple>
+      <Name>Alan Shepard</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1923</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Virgil Grissom</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1926</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Glenn</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1921</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Scott Carpenter</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1925</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Walter Schirra</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1923</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Gordon Cooper</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1927</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Deke Slayton</Name>
+      <Group>NASA Group 1</Group>
+      <Birth>1924</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 2: "The New Nine" -->
+    <tuple>
+      <Name>Neil Armstrong</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Frank Borman</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1928</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Pete Conrad</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jim Lovell</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1928</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James McDivitt</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1929</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Elliot See</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1927</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Tom Stafford</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ed White</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Young</Name>
+      <Group>NASA Group 2</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 3: "The Fourteen" -->
+    <tuple>
+      <Name>Buzz Aldrin</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Anders</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1933</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Bassett</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1931</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Alan Bean</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1932</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Gene Cernan</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1934</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Roger Chaffee</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1935</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Collins</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Walter Cunningham</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1932</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donn Eisele</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Theodore Freeman</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1930</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Gordon</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1929</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Russell Schewickart</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1935</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Dave Scott</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1932</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Clifton Williams</Name>
+      <Group>NASA Group 3</Group>
+      <Birth>1932</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 4: "The Scientists" -->
+    <tuple>
+      <Name>Owen Garriott</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1930</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Edward Gibson</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1936</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Duane Graveline</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1931</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Joseph Kerwin</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1932</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>F. Curtis Michel</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1934</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Harrison Schmitt</Name>
+      <Group>NASA Group 4</Group>
+      <Birth>1935</Birth>
+      <Affiliation>Civilian</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 5: "The Original 19" -->
+    <tuple>
+      <Name>Vance Brand</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USMC</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John S. Bull</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Gerald Carr</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USMC</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charlie Duke</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Joe Engle</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ronald Evans</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Edward G. Givens</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Fred Haise</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USMC</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Irwin</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Don Lind</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jack Lousma</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USMC</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ken Mattingly</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bruce McCandless</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Edgar Mitchell</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Pogue</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stuart Roosa</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jack Swigert</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Paul Weitz</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USN</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Alfred Worden</Name>
+      <Group>NASA Group 5</Group>
+      <Birth></Birth>
+      <Affiliation>USAF</Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 6: "The Excess Eleven" -->
+    <tuple>
+      <Name>Joseph Allen</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Philip Chapman</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Anthony England</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Karl Henize</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald Holmquest</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William B. Lenoir</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Anthony Llewellyn</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Story Musgrave</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Brian O'Leary</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Parker</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Thornton</Name>
+      <Group>NASA Group 6</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 7 -->
+    <tuple>
+      <Name>Karol Bobko</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Crippen</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Gordon Fullerton</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Henry Hartsfield</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Overmyer</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald H. Peterson</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Truly</Name>
+      <Group>NASA Group 7</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- Astronaut Group 8: "Thirty-Five New Guys" -->
+    <tuple>
+      <Name>Daniel Brandenstein</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Coats</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Covey</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Creighton</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Gibson</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Frederick D. Gregory</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Frederick Hauck</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jon McBride</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Francis "Dick" Scobee</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Brewster Shaw</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Loren Shriver</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David Walker</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald Williams</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Guion Bluford</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Buchli</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Fabian</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Anna Fisher</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Dale Gardner</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>S. David Griggs</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Terry Hart</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Steven Hawley</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jeffrey Hoffman</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Shannon Lucid</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ronald McNair</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Mullane</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Steven Nagel</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>George Nelson</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ellison Onizuka</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Judith Resnik</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Sally Ride</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Rhea Seddon</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Stewart</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kathryn D. Sullivan</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Norman Thagard</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James van Hoften</Name>
+      <Group>NASA Group 8</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!--  Spacelab Payload Specialists Group 1 -->
+    <tuple>
+      <Name>Ulf Merbold</Name>
+      <Group>Spacelab Payload Specialists Group 1</Group>
+      <Birth>1941</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Germany</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Claude Nicollier</Name>
+      <Group>Spacelab Payload Specialists Group 1</Group>
+      <Birth>1944</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Switzerland</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Wubbo Ockels</Name>
+      <Group>Spacelab Payload Specialists Group 1</Group>
+      <Birth>1946</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Netherlands</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Franco Malerba</Name>
+      <Group>Spacelab Payload Specialists Group 1</Group>
+      <Birth>1946</Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Italy</Nationality>
+    </tuple>
+    
+    <!-- Astronaut Group 9 -->
+    <tuple>
+      <Name>John Blaha</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Bolden</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Roy Bridges</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Guy Gardner</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ronald Grabe</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bryan O'Connor</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard N. Richards</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael J. Smith</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Bagian</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Franklin Chang-Diaz</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mary Cleave</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bonnie Dunbar</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Fisher</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David Hilmers</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David Leestma</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Lounge</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jerry Ross</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Sherwood Spring</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Springer</Name>
+      <Group>NASA Group 9</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- NRC Group -->
+    <tuple>
+      <Name>Roberta Bondar</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Marc Garneau</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Steve MacLean</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kenneth Money</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Thirsk</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bjarni Tryggvason</Name>
+      <Group>NRC Group</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+
+    <!-- NASA Group 10: "The Maggots" -->
+    <tuple>
+      <Name>Kenneth Cameron</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Casper</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Frank Culbertson</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Sidney Gutierrez</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Blaine Hammond</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael McCulley</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Wetherbee</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name> James Adamson</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ellen Baker</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mark Brown</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Sonny Carter</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Marsha Ivins</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mark Lee</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David Low</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Shepherd</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kathryn Thornton</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles "Lacy" Veach</Name>
+      <Group>NASA Group 10</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- NASA Group 11 -->
+<tuple>
+      <Name>Michael A. Baker</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert D. Cabana</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Brian Duffy</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Terence Henricks</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stephen Oswald</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stephen Thorne</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name> Jerome Apt</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Gemar</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Linda Godwin</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Hieb</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Tamara Jernigan</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Carl Meade</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Rodolfo Neri Vela</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Pierre Thuot</Name>
+      <Group>NASA Group 11</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- NASA Teacher in Space -->
+    <tuple>
+      <Name>Christa McAuliffe</Name>
+      <Group>NASA Teacher in Space</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Barbara Morgan</Name>
+      <Group>NASA Teacher in Space</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- NASA Group 12: "The GAFFers" -->
+    <tuple>
+      <Name>Andrew M. Allen</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kenneth Bowersox</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Curtis Brown</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kevin Chilton</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald McMonagle</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Readdy</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kenneth Reightler</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Thomas Akers</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jan Davis</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Foale</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Gregory Harbaugh</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mae Jemison</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bruce Melnick</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mario Runco</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Voss</Name>
+      <Group>NASA Group 12</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- NASA Group 13: "The Hairballs" -->
+    <tuple>
+      <Name>Kenneth Cockrell</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Eileen Collins</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William G. Gregory</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Halsell</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Precourt</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Searfoss</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Terrence Wilcutt</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Daniel Bursch</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Leroy Chiao</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael R. Clifford</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Bernard Harris</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Susan Helms</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Thomas David Jones</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William McArthur</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Newman</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ellen Ochoa</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Ronald Sega</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Nancy Currie</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald A. Thomas</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Janice Voss</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Carl E. Walz</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Peter Wisoff</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David Wolf</Name>
+      <Group>NASA Group 13</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- NASA Group 14: "The Hogs" -->
+<tuple>
+      <Name>Scott Horowitz</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Brent Jett</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kevin Kregel</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kent Rominger</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name> Daniel T. Barry</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Brady</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Catherine Coleman</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Gernhardt</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Grunsfeld</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Wendy Lawrence</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jerry Linenger</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Linnehan</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Lopez-Alegria</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Scott Parazynski</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Winston Scott</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Steven Smith</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Joseph Tanner</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Andy Thomas</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mary Weber</Name>
+      <Group>NASA Group 14</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+
+    <!-- CSA Group 2 -->
+    <tuple>
+      <Name>Dafydd Williams</Name>
+      <Group>CSA Group 2</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Julie Payette</Name>
+      <Group>CSA Group 2</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Chris Hadfield</Name>
+      <Group>CSA Group 2</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael McKay</Name>
+      <Group>CSA Group 2</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>Canada</Nationality>
+    </tuple>
+    
+    <!-- NASA Group 15: "The Flying Escargot" -->
+<tuple>
+      <Name>Scott Altman</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jeffrey Ashby</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Bloomfield</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Joe Edwards</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Dominic Gorie</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Rick Husband</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Steven Lindsey</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Pamela Melroy</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Susan (Still) Kilrain</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Frederick Sturckow</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Anderson</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kalpana Chawla</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Robert Curbeam</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Kathryn Hire</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Janet Kavandi</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Edward Lu</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Carlos Noriega</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James Reilly</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stephen Robinson</Name>
+      <Group>NASA Group 15</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    
+    <!-- NASA Group 16: "The Sardines" -->
+    <tuple>
+      <Name>Duane G. Carey</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stephen Frick</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles O. Hobaugh</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>James M. Kelly</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mark Kelly</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Scott Kelly</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Paul Lockhart</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Christopher Loria</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>William Cameron McCool</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Mark L. Polansky</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>David McDowell Brown</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Daniel C. Burbank</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Yvonne Cagle</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Fernando Caldeiro</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Charles Camarda</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Laurel Clark</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael Fincke</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Patrick G. Forrester</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John Herrington</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Joan Higginbotham</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Sandra Magnus</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Michael J. Massimino</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Richard Mastracchio</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Lee Morin</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Lisa Nowak</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Donald Pettit</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>John L. Phillips</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Paul W. Richards</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Piers Sellers</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Heidemarie Stefanyshyn-Piper</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Daniel M. Tani</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Rex J. Walheim</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Peggy Whitson</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Jeffrey Williams</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+    <tuple>
+      <Name>Stephanie Wilson</Name>
+      <Group>NASA Group 16</Group>
+      <Birth></Birth>
+      <Affiliation></Affiliation>
+      <Nationality>USA</Nationality>
+    </tuple>
+  </table>
+</relation>
