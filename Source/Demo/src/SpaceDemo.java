@@ -18,7 +18,7 @@
 import java.io.*;
 
 import ca.uqac.dim.turtledb.*;
-import ca.uqac.dim.turtledb.util.FileReadWrite;
+import ca.uqac.dim.turtledb.util.*;
 
 /**
  * Shows an example of basic relation processing with TurtleDB
