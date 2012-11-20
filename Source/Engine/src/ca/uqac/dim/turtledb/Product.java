@@ -129,6 +129,7 @@ public class Product extends NAryRelation
               break;
             }
             r = tab.tupleIterator();
+            m_iterators.setElementAt(r, i);
             assert r.hasNext();
             Tuple t = r.next();
             assert t != null;
