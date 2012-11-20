@@ -167,11 +167,13 @@ public class VariableTable extends UnaryRelation
     return false;
   }
   
-  protected class VariableTableIterator extends UnaryRelationIterator
+  protected class VariableTableStreamIterator extends UnaryRelationStreamIterator
   {
     protected RelationIterator m_iterator = null;
     
-    public VariableTableIterator()
+    protected Tuple m_nextTuple;
+    
+    public VariableTableStreamIterator()
     {
       super();
       reset();
@@ -180,24 +182,32 @@ public class VariableTable extends UnaryRelation
     @Override
     protected Tuple internalNext()
     {
-      if (m_iterator != null)
-        return m_iterator.internalNext();
-      else
+      if (m_iterator == null)
         return null;
+      if (!m_iterator.hasNext())
+        return null;
+      return (m_iterator.next());
     }
     
     @Override
     public void reset()
     {
       if (m_relation != null)
-        m_iterator = m_relation.iterator();
+        m_iterator = m_relation.streamIterator();
     }
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new VariableTableIterator();
+    return new VariableTableStreamIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    // TODO Auto-generated method stub
+    return null;
   }
   
 }

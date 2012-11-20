@@ -17,7 +17,7 @@
  -------------------------------------------------------------------------*/
 package ca.uqac.dim.turtledb;
 
-import java.util.Vector;
+import java.util.Iterator;
 
 import ca.uqac.dim.turtledb.QueryVisitor.VisitorException;
 
@@ -43,7 +43,7 @@ public class Product extends NAryRelation
     v.visit(this);
   }
   
-  protected class ProductIterator extends NAryRelationIterator
+  protected class ProductStreamIterator extends NAryRelationStreamIterator
   {
     @Override
     protected Tuple internalNext()
@@ -84,8 +84,61 @@ public class Product extends NAryRelation
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new ProductIterator();
+    return new ProductStreamIterator();
+  }
+
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new ProductCacheIterator();
+  }
+  
+  protected class ProductCacheIterator extends NAryRelationCacheIterator
+  {
+
+    @Override
+    protected void getIntermediateResult()
+    {
+      Table tab_out = new Table(getSchema());
+      super.getIntermediateResult();
+      super.initializeIteration();
+      boolean in = true;
+      while (in)
+      {
+        int len = m_relations.size();
+        // Update m_lastTuple by "incrementing" the vector
+        for (int i = len - 1; i >= 0; i--)
+        {
+          Table tab = m_results.get(i);
+          Iterator<Tuple> r = m_iterators.get(i);
+          if (r.hasNext())
+          {
+            Tuple t = r.next();
+            assert t != null;
+            m_lastTuple.setElementAt(t, i);
+            break;
+          }
+          else
+          {
+            if (i == 0)
+            {
+              in = false;
+              break;
+            }
+            r = tab.tupleIterator();
+            assert r.hasNext();
+            Tuple t = r.next();
+            assert t != null;
+            m_lastTuple.setElementAt(t, i);
+          }
+        }
+        tab_out.put(Tuple.makeTuple(m_lastTuple));
+      }
+      m_intermediateResult = tab_out;
+    }
+    
   }
 }

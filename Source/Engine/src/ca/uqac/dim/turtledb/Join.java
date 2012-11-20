@@ -66,14 +66,14 @@ public class Join extends BinaryRelation
     v.visit(this);
   }
   
-  protected class JoinIterator extends BinaryRelationIterator
+  protected class JoinStreamIterator extends BinaryRelationStreamIterator
   {
-    protected RelationIterator m_childIterator;
+    protected RelationStreamIterator m_childIterator;
     
-    public JoinIterator()
+    public JoinStreamIterator()
     {
       super();
-      m_childIterator = m_product.iterator();
+      m_childIterator = m_product.streamIterator();
       reset();
     }
     
@@ -101,9 +101,37 @@ public class Join extends BinaryRelation
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationIterator streamIterator()
   {
-    return new JoinIterator();
+    return new JoinStreamIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new JoinCacheIterator();
+  }
+  
+  protected class JoinCacheIterator extends RelationCacheIterator
+  {
+    public JoinCacheIterator()
+    {
+      super();
+      m_intermediateResult = null;
+    }
+    
+    protected void getIntermediateResult()
+    {
+      m_intermediateResult = new Table(m_product.getSchema());
+      RelationIterator it = m_product.cacheIterator();
+      while (it.hasNext())
+      {
+        Tuple t = it.next();
+        if (m_condition.evaluate(t))
+          m_intermediateResult.put(t);
+      }
+    }
+    
   }
 
 }

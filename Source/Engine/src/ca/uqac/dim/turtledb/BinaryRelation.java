@@ -60,9 +60,36 @@ public abstract class BinaryRelation extends Relation
     return m_left.tupleCount() + m_right.tupleCount();
   }
   
-  protected abstract class BinaryRelationIterator extends RelationIterator
+  protected abstract class BinaryRelationStreamIterator extends RelationStreamIterator
   {
     
+  }
+  
+  protected class BinaryRelationCacheIterator extends RelationCacheIterator
+  {
+    protected Table m_intermediateLeft;
+    protected Table m_intermediateRight;
+    
+    @Override
+    protected void getIntermediateResult()
+    {
+      RelationIterator it = null;
+      it = m_left.cacheIterator();
+      m_intermediateLeft = new Table(m_left.getSchema());
+      while (it.hasNext())
+      {
+        Tuple t = it.next();
+        m_intermediateLeft.put(t);
+      }
+      it = m_right.cacheIterator();
+      m_intermediateRight = new Table(m_right.getSchema());
+      while (it.hasNext())
+      {
+        Tuple t = it.next();
+        m_intermediateRight.put(t);
+      }
+      m_intermediateRight = new Table(m_right.getSchema());
+    }
   }
 
 }

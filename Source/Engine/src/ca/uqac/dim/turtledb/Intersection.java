@@ -29,7 +29,7 @@ public class Intersection extends NAryRelation
     v.visit(this);
   }
   
-  protected class IntersectionIterator extends NAryRelationIterator
+  protected class IntersectionIterator extends NAryRelationStreamIterator
   {
     /**
      * Implementation of internalNext. This implementation
@@ -81,9 +81,42 @@ public class Intersection extends NAryRelation
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
     return new IntersectionIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new IntersectionCacheIterator();
+  }
+  
+  protected class IntersectionCacheIterator extends NAryRelationCacheIterator
+  {
+    @Override
+    protected void getIntermediateResult()
+    {
+      super.getIntermediateResult();
+      Table tab = new Table(getSchema());
+      Table first_table = m_results.firstElement();
+      for (Tuple t : first_table.m_tuples)
+      {
+        boolean all_in = true;
+        for (int i = 1; i < m_results.size(); i++)
+        {
+          Table tt = m_results.elementAt(i);
+          if (!tt.contains(t))
+          {
+            all_in = false;
+            break;
+          }
+        }
+        if (all_in)
+          tab.put(t);
+      }
+      m_intermediateResult = tab;
+    }
   }
 
 }

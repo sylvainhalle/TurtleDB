@@ -49,9 +49,9 @@ public class Selection extends UnaryRelation
     v.visit(this);
   }
   
-  protected class SelectionIterator extends UnaryRelationIterator
+  protected class SelectionStreamIterator extends UnaryRelationStreamIterator
   { 
-    public SelectionIterator()
+    public SelectionStreamIterator()
     {
       super();
     }
@@ -69,13 +69,35 @@ public class Selection extends UnaryRelation
       }
       return null;
     }
-    
+  }
+  
+  protected class SelectionCacheIterator extends RelationCacheIterator
+  {
+    @Override
+    protected void getIntermediateResult()
+    {
+      Table tab = new Table(getSchema());
+      RelationIterator i = m_relation.cacheIterator();
+      while (i.hasNext())
+      {
+        Tuple t = i.next();
+        if (m_condition.evaluate(t))
+          tab.put(t);
+      }
+      m_intermediateResult = tab;
+    }
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new SelectionIterator();
+    return new SelectionStreamIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new SelectionCacheIterator();
   }
 
 }

@@ -32,14 +32,14 @@ public abstract class UnaryRelation extends Relation
     return m_relation.tupleCount();
   }
   
-  protected abstract class UnaryRelationIterator extends RelationIterator
+  protected abstract class UnaryRelationStreamIterator extends RelationStreamIterator
   {
     protected RelationIterator m_childIterator;
     
-    public UnaryRelationIterator()
+    public UnaryRelationStreamIterator()
     {
       super();
-      m_childIterator = m_relation.iterator();
+      m_childIterator = m_relation.streamIterator();
     }
     
     @Override
@@ -47,6 +47,21 @@ public abstract class UnaryRelation extends Relation
     {
       super.reset();
       m_childIterator.reset();
+    }
+  }
+  
+  protected abstract class UnaryRelationCacheIterator extends RelationCacheIterator
+  {
+    protected void getIntermediateResult()
+    {
+      Table tab_out = new Table(m_relation.getSchema());
+      RelationIterator it = m_relation.cacheIterator();
+      while (it.hasNext())
+      {
+        Tuple t = it.next();
+        tab_out.put(t);
+      }
+      m_intermediateResult = tab_out;
     }
   }
 }

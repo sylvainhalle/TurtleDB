@@ -35,9 +35,9 @@ public class Union extends NAryRelation
     v.visit(this);
   }
 
-  protected class UnionIterator extends NAryRelationIterator
+  protected class UnionStreamIterator extends NAryRelationStreamIterator
   {
-    public UnionIterator()
+    public UnionStreamIterator()
     {
       super();
     }
@@ -51,8 +51,30 @@ public class Union extends NAryRelation
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new UnionIterator();
+    return new UnionStreamIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new UnionCacheIterator();
+  }
+  
+  protected class UnionCacheIterator extends RelationCacheIterator
+  {
+    @Override
+    protected void getIntermediateResult()
+    {
+      Table tab = new Table(getSchema());
+      for (Relation r : m_relations)
+      {
+        RelationIterator i = r.cacheIterator();
+        Tuple t = i.next();
+        tab.put(t);
+      }
+      m_intermediateResult = tab;
+    }
   }
 }

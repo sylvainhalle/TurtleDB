@@ -29,6 +29,12 @@ public abstract class Relation
 {
   
   /**
+   * Whether the enumeration of the relation's tuples is
+   * performed in "streaming" mode (vs. "cache" mode)
+   */
+  public boolean m_streamingMode = false; 
+  
+  /**
    * Returns the relation's schema
    * @return The schema
    */
@@ -50,6 +56,22 @@ public abstract class Relation
   public final int getDegree()
   {
     return getSchema().size();
+  }
+  
+  /**
+   * Sets the way of querying the relation's tuples
+   * @param b True to evaluate in streaming mode, false otherwise
+   */
+  public void setStreamingMode(boolean b)
+  {
+    m_streamingMode = b;
+  }
+  
+  public final RelationIterator iterator()
+  {
+    if (m_streamingMode)
+      return streamIterator();
+    return cacheIterator();
   }
   
   /**
@@ -141,7 +163,13 @@ public abstract class Relation
    * Returns an iterator over tuples of the relation
    * @return
    */
-  public abstract RelationIterator iterator();
+  public abstract RelationIterator streamIterator();
+  
+  /**
+   * Returns an iterator over tuples of the relation
+   * @return
+   */
+  public abstract RelationIterator cacheIterator();
   
   /**
    * Determines if the query tree is a fragment. This is the

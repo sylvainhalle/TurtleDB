@@ -115,7 +115,7 @@ import org.w3c.dom.*;
     Node n = m_doc.createElement("table");
     Node schema = createSchemaNode(r.m_schema);
     n.appendChild(schema);
-    RelationIterator it = r.iterator();
+    RelationStreamIterator it = r.streamIterator();
     it.reset();
     while (it.hasNext())
     {

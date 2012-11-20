@@ -84,7 +84,7 @@ public abstract class NAryRelation extends Relation
   
 
   
-  protected abstract class NAryRelationIterator extends RelationIterator
+  protected abstract class NAryRelationStreamIterator extends RelationStreamIterator
   {
     /**
      * Determines if the tuple to output is the first one in the iteration
@@ -101,48 +101,35 @@ public abstract class NAryRelation extends Relation
      */
     protected Vector<RelationIterator> m_iterators;
     
-    public NAryRelationIterator()
+    public NAryRelationStreamIterator()
     {
       super();
       m_lastTuple = new Vector<Tuple>();
       m_iterators = new Vector<RelationIterator>();
       for (Relation r : m_relations)
       {
-        m_iterators.addElement(r.iterator());
+        m_iterators.addElement(r.streamIterator());
       }
       reset();
     }
     
     protected void initializeIteration()
     {
-      /*if (m_first)
-      {
-        m_first = false;
-        int len = m_iterators.size();
-        for (int i = 0; i < len; i++)
-        {
-          m_lastTuple.add(new Tuple());
-        }
-      }*/
       int len = m_iterators.size();
-      //if (m_first)
-      //{
-        // If first tuple to output, get first tuple of every table
-        // and fill m_lastTuple with them
-        for (int i = 0; i < len; i++)
+      // Get first tuple of every table and fill m_lastTuple with them
+      for (int i = 0; i < len; i++)
+      {
+        RelationIterator r = m_iterators.get(i);
+        if (r.hasNext())
         {
-          RelationIterator r = m_iterators.get(i);
-          if (r.hasNext())
-          {
-            Tuple t = r.next();
-            m_lastTuple.insertElementAt(t, i);
-          }
-          else
-          {
-            m_lastTuple.insertElementAt(null, i);
-          }
+          Tuple t = r.next();
+          m_lastTuple.insertElementAt(t, i);
         }
-      //}
+        else
+        {
+          m_lastTuple.insertElementAt(null, i);
+        }
+      }
     }
 
     /**
@@ -189,6 +176,67 @@ public abstract class NAryRelation extends Relation
         r.reset();
       m_first = true;
     }
+  }
+  
+  protected class NAryRelationCacheIterator extends RelationCacheIterator
+  {
+    
+    protected Vector<Table> m_results = null;
+    
+    protected Vector<Tuple> m_lastTuple = new Vector<Tuple>();
+    
+    protected Vector<Iterator<Tuple>> m_iterators;
+    
+    public NAryRelationCacheIterator()
+    {
+      super();
+      m_lastTuple = new Vector<Tuple>();
+      m_iterators = new Vector<Iterator<Tuple>>();
+      for (Relation r : m_relations)
+      {
+        m_iterators.addElement(r.streamIterator());
+      }
+      //reset();
+    }
+    
+    @Override
+    protected void getIntermediateResult()
+    {
+      m_results = new Vector<Table>();
+      for (Relation r : m_relations)
+      {
+        Table tab_int = new Table(r.getSchema());
+        RelationIterator i = r.cacheIterator();
+        while (i.hasNext())
+        {
+          Tuple t = i.next();
+          tab_int.put(t);
+        }
+        m_results.add(tab_int);
+      }
+    }
+    
+    protected void initializeIteration()
+    {
+      int len = m_results.size();
+      // Get first tuple of every table and fill m_lastTuple with them
+      for (int i = 0; i < len; i++)
+      {
+        Table tab = m_results.elementAt(i);
+        Iterator<Tuple> r = tab.tupleIterator();
+        m_iterators.add(r);
+        if (r.hasNext())
+        {
+          Tuple t = r.next();
+          m_lastTuple.insertElementAt(t, i);
+        }
+        else
+        {
+          m_lastTuple.insertElementAt(null, i);
+        }
+      }
+    }
+    
   }
   
 }

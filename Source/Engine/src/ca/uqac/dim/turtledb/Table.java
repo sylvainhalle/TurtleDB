@@ -169,8 +169,9 @@ public class Table extends Relation
    */
   public void copy(Relation r)
   {
+    assert r != null;
     m_schema = r.getSchema();
-    Iterator<Tuple> i = this.iterator();
+    Iterator<Tuple> i = r.streamIterator();
     while (i.hasNext())
     {
       this.put(i.next());
@@ -212,16 +213,16 @@ public class Table extends Relation
   }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new TableIterator();
+    return new TableStreamIterator();
   }
   
-  protected class TableIterator extends RelationIterator
+  protected class TableStreamIterator extends RelationStreamIterator
   {
     protected Iterator<Tuple> m_iterator;
     
-    public TableIterator()
+    public TableStreamIterator()
     {
       m_iterator = m_tuples.iterator();
     }
@@ -239,6 +240,29 @@ public class Table extends Relation
       super.reset();
       m_iterator = m_tuples.iterator();
     }
+  }
+  
+  protected Iterator<Tuple> tupleIterator()
+  {
+    return m_tuples.iterator();
+  }
+  
+  protected class TableCacheIterator extends RelationCacheIterator
+  {
+
+    @Override
+    protected void getIntermediateResult()
+    {
+      // The intermediate result is the table itself
+      super.m_intermediateResult = Table.this; 
+    }
+    
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new TableStreamIterator();
   }
 
 }

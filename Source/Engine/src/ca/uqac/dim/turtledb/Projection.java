@@ -67,9 +67,9 @@ public class Projection extends UnaryRelation
     v.visit(this);
   }
   
-  protected class ProjectionIterator extends UnaryRelationIterator
+  protected class ProjectionStreamIterator extends UnaryRelationStreamIterator
   {
-    public ProjectionIterator()
+    public ProjectionStreamIterator()
     {
       super();
       m_outputTuples = new LinkedList<Tuple>();
@@ -81,11 +81,34 @@ public class Projection extends UnaryRelation
       return project(t);    
     }
   }
+  
+  protected class ProjectionCacheIterator extends UnaryRelationCacheIterator
+  {
+    public void getIntermediateResult()
+    {
+      Table tab_out = new Table(getSchema());
+      super.getIntermediateResult();
+      Iterator<Tuple> it = m_intermediateResult.tupleIterator();
+      while (it.hasNext())
+      {
+        Tuple t = it.next();
+        Tuple t2 = project(t);
+        tab_out.put(t2);
+      }
+      m_intermediateResult = tab_out;
+    }
+  }
 
   @Override
-  public RelationIterator iterator()
+  public RelationStreamIterator streamIterator()
   {
-    return new ProjectionIterator();
+    return new ProjectionStreamIterator();
+  }
+
+  @Override
+  public RelationIterator cacheIterator()
+  {
+    return new ProjectionCacheIterator();
   }
 
 }
