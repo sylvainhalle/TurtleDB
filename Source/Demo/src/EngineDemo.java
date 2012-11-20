@@ -18,7 +18,12 @@
 
 import ca.uqac.dim.turtledb.*;
 
-public class EngineTest
+/**
+ * A simple simulation of distributed query plan processing
+ * @author sylvain
+ *
+ */
+public class EngineDemo
 {
   public static void main(String[] args)
   {
