@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation_1_1_binary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.BinaryRelation.BinaryRelationCacheIterator" alt="" coords="832,5,1229,35"/>
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_cache_iterator.html" title="ca.uqac.dim.turtledb.Join.JoinCacheIterator" alt="" coords="893,59,1168,88"/>
+<area shape="rect" id="node11" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation_1_1_n_ary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.NAryRelation.NAryRelationCacheIterator" alt="" coords="840,112,1221,141"/>
+<area shape="rect" id="node15" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection_1_1_selection_cache_iterator.html" title="ca.uqac.dim.turtledb.Selection.SelectionCacheIterator" alt="" coords="864,165,1197,195"/>
+<area shape="rect" id="node17" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_cache_iterator.html" title="ca.uqac.dim.turtledb.Table.TableCacheIterator" alt="" coords="885,219,1176,248"/>
+<area shape="rect" id="node19" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationCacheIterator" alt="" coords="835,272,1227,301"/>
+<area shape="rect" id="node21" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_union_1_1_union_cache_iterator.html" title="ca.uqac.dim.turtledb.Union.UnionCacheIterator" alt="" coords="884,325,1177,355"/>
+<area shape="rect" id="node2" href="$interfaceca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_iterator.html" title="ca.uqac.dim.turtledb.RelationIterator" alt="" coords="231,165,463,195"/>
+<area shape="rect" id="node13" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection_1_1_intersection_cache_iterator.html" title="ca.uqac.dim.turtledb.Intersection.IntersectionCacheIterator" alt="" coords="1277,112,1640,141"/>
+</map>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Turtle DB: Class Hierarchy</title>
+<title>TurtleDB: Class Hierarchy</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -28,10 +28,10 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Turtle DB
+   <div id="projectname">TurtleDB
    
    </div>
-   <div id="projectbrief">A mini DDBMS</div>
+   <div id="projectbrief">A mini distributed database system</div>
   </td>
   
   
@@ -100,13 +100,16 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 </ul>
 </li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_engine.html">ca.uqac.dim.turtledb.Engine</a></li>
-<li><a class="el" href="class_engine_test.html">EngineTest</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1util_1_1_file_read_write.html">ca.uqac.dim.turtledb.util.FileReadWrite</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_graphviz_query_formatter.html">ca.uqac.dim.turtledb.GraphvizQueryFormatter</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_literal.html">ca.uqac.dim.turtledb.Literal</a><ul>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html">ca.uqac.dim.turtledb.Attribute</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_value.html">ca.uqac.dim.turtledb.Value</a></li>
 </ul>
 </li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_product_1_1_product_cache_iterator.html">ca.uqac.dim.turtledb.Product.ProductCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_projection_1_1_projection_cache_iterator.html">ca.uqac.dim.turtledb.Projection.ProjectionCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_projection_1_1_projection_stream_iterator.html">ca.uqac.dim.turtledb.Projection.ProjectionStreamIterator</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_communicator_1_1_query_execution_exception.html">ca.uqac.dim.turtledb.Communicator.QueryExecutionException</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_plan.html">ca.uqac.dim.turtledb.QueryPlan</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_processor.html">ca.uqac.dim.turtledb.QueryProcessor</a><ul>
@@ -144,11 +147,45 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 </li>
 </ul>
 </li>
+<li><a class="el" href="interfaceca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_iterator.html">ca.uqac.dim.turtledb.RelationIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_cache_iterator.html">ca.uqac.dim.turtledb.RelationCacheIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation_1_1_binary_relation_cache_iterator.html">ca.uqac.dim.turtledb.BinaryRelation.BinaryRelationCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_cache_iterator.html">ca.uqac.dim.turtledb.Join.JoinCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation_1_1_n_ary_relation_cache_iterator.html">ca.uqac.dim.turtledb.NAryRelation.NAryRelationCacheIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection_1_1_intersection_cache_iterator.html">ca.uqac.dim.turtledb.Intersection.IntersectionCacheIterator</a></li>
+</ul>
+</li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection_1_1_selection_cache_iterator.html">ca.uqac.dim.turtledb.Selection.SelectionCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_cache_iterator.html">ca.uqac.dim.turtledb.Table.TableCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_cache_iterator.html">ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationCacheIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_union_1_1_union_cache_iterator.html">ca.uqac.dim.turtledb.Union.UnionCacheIterator</a></li>
+</ul>
+</li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_stream_iterator.html">ca.uqac.dim.turtledb.RelationStreamIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation_1_1_binary_relation_stream_iterator.html">ca.uqac.dim.turtledb.BinaryRelation.BinaryRelationStreamIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_stream_iterator.html">ca.uqac.dim.turtledb.Join.JoinStreamIterator</a></li>
+</ul>
+</li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation_1_1_n_ary_relation_stream_iterator.html">ca.uqac.dim.turtledb.NAryRelation.NAryRelationStreamIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection_1_1_intersection_iterator.html">ca.uqac.dim.turtledb.Intersection.IntersectionIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_product_1_1_product_stream_iterator.html">ca.uqac.dim.turtledb.Product.ProductStreamIterator</a></li>
+</ul>
+</li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_stream_iterator.html">ca.uqac.dim.turtledb.Table.TableStreamIterator</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_stream_iterator.html">ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationStreamIterator</a><ul>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_variable_table_1_1_variable_table_stream_iterator.html">ca.uqac.dim.turtledb.VariableTable.VariableTableStreamIterator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_schema.html">ca.uqac.dim.turtledb.Schema</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection_1_1_selection_stream_iterator.html">ca.uqac.dim.turtledb.Selection.SelectionStreamIterator</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_http_communicator_1_1_site_info.html">ca.uqac.dim.turtledb.HttpCommunicator.SiteInfo</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_parser.html">ca.uqac.dim.turtledb.TableParser</a></li>
-<li><a class="el" href="class_test.html">Test</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_tuple.html">ca.uqac.dim.turtledb.Tuple</a></li>
+<li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_union_1_1_union_stream_iterator.html">ca.uqac.dim.turtledb.Union.UnionStreamIterator</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_visitor_1_1_visitor_exception.html">ca.uqac.dim.turtledb.QueryVisitor.VisitorException</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_query_formatter.html">ca.uqac.dim.turtledb.XmlQueryFormatter</a></li>
 <li><a class="el" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_query_parser.html">ca.uqac.dim.turtledb.XmlQueryParser</a></li>
@@ -158,7 +195,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Sun Sep 2 2012 20:49:37 for Turtle DB by
+    <li class="footer">Generated on Tue Nov 20 2012 13:26:48 for TurtleDB by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

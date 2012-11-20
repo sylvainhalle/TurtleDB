@@ -1,8 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation.html" title="ca.uqac.dim.turtledb.BinaryRelation" alt="" coords="885,92,1115,119"/>
-<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation.html" title="ca.uqac.dim.turtledb.Relation" alt="" coords="568,83,760,109"/>
-<area shape="rect" id="node8" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation.html" title="ca.uqac.dim.turtledb.NAryRelation" alt="" coords="889,41,1111,68"/>
-<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_tuple.html" title="ca.uqac.dim.turtledb.Tuple" alt="" coords="264,83,440,109"/>
-<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_product.html" title="ca.uqac.dim.turtledb.Product" alt="" coords="1171,41,1360,68"/>
-<area shape="rect" id="node10" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="1166,143,1365,169"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation.html" title="ca.uqac.dim.turtledb.BinaryRelation" alt="" coords="317,25,547,55"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation.html" title="ca.uqac.dim.turtledb.Relation" alt="" coords="5,29,197,59"/>
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation.html" title="ca.uqac.dim.turtledb.NAryRelation" alt="" coords="321,79,543,108"/>
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_product.html" title="ca.uqac.dim.turtledb.Product" alt="" coords="603,79,792,108"/>
+<area shape="rect" id="node14" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="599,132,796,161"/>
 </map>

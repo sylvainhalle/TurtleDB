@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_stream_iterator.html" title="ca.uqac.dim.turtledb.Join.JoinStreamIterator" alt="" coords="67,315,344,344"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_stream_iterator.html" title="ca.uqac.dim.turtledb.RelationStreamIterator" alt="" coords="68,160,343,189"/>
+<area shape="rect" id="node4" href="$interfaceca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_iterator.html" title="ca.uqac.dim.turtledb.RelationIterator" alt="" coords="89,83,321,112"/>
+</map>

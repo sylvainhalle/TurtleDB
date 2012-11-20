@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Turtle DB", "index.html", [
+  [ "TurtleDB", "index.html", [
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],

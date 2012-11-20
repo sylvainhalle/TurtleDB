@@ -1,6 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation.html" title="ca.uqac.dim.turtledb.UnaryRelation" alt="" coords="33,277,260,304"/>
-<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation.html" title="ca.uqac.dim.turtledb.Relation" alt="" coords="51,187,243,213"/>
-<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_tuple.html" title="ca.uqac.dim.turtledb.Tuple" alt="" coords="59,96,235,123"/>
-<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="285,277,483,304"/>
+<area shape="rect" id="node2" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation.html" title="ca.uqac.dim.turtledb.UnaryRelation" alt="" coords="5,101,232,131"/>
+<area shape="rect" id="node4" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation.html" title="ca.uqac.dim.turtledb.Relation" alt="" coords="23,5,215,35"/>
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_condition.html" title="ca.uqac.dim.turtledb.Condition" alt="" coords="256,101,453,131"/>
 </map>

@@ -1,3 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_tuple.html" title="ca.uqac.dim.turtledb.Tuple" alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation.html" title="ca.uqac.dim.turtledb.Relation" alt="" coords="5,139,197,168"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation.html" title="ca.uqac.dim.turtledb.BinaryRelation" alt="" coords="245,32,475,61"/>
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation.html" title="ca.uqac.dim.turtledb.NAryRelation" alt="" coords="249,112,471,141"/>
+<area shape="rect" id="node15" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_table.html" title="ca.uqac.dim.turtledb.Table" alt="" coords="272,165,448,195"/>
+<area shape="rect" id="node17" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation.html" title="ca.uqac.dim.turtledb.UnaryRelation" alt="" coords="247,245,473,275"/>
+<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_join.html" title="ca.uqac.dim.turtledb.Join" alt="" coords="551,5,719,35"/>
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection.html" title="ca.uqac.dim.turtledb.Intersection" alt="" coords="529,59,740,88"/>
+<area shape="rect" id="node11" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_product.html" title="ca.uqac.dim.turtledb.Product" alt="" coords="540,112,729,141"/>
+<area shape="rect" id="node13" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_union.html" title="ca.uqac.dim.turtledb.Union" alt="" coords="545,165,724,195"/>
+<area shape="rect" id="node19" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_projection.html" title="ca.uqac.dim.turtledb.Projection" alt="" coords="533,219,736,248"/>
+<area shape="rect" id="node21" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection.html" title="ca.uqac.dim.turtledb.Selection" alt="" coords="536,272,733,301"/>
+<area shape="rect" id="node23" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_variable_table.html" title="ca.uqac.dim.turtledb.VariableTable" alt="" coords="524,325,745,355"/>
 </map>
