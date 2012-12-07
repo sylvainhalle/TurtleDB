@@ -1,5 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_processor.html" title="ca.uqac.dim.turtledb.QueryProcessor" alt="" coords="7,32,244,61"/>
-<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_centralized_communicator_1_1_centralized_query_processor.html" title="ca.uqac.dim.turtledb.CentralizedCommunicator.CentralizedQueryProcessor" alt="" coords="293,5,752,35"/>
-<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_http_communicator_1_1_http_query_processor.html" title="ca.uqac.dim.turtledb.HttpCommunicator.HttpQueryProcessor" alt="" coords="335,59,711,88"/>
+<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_plan.html" title="ca.uqac.dim.turtledb.QueryPlan" alt="" coords="5,5,211,35"/>
 </map>

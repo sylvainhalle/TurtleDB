@@ -22,6 +22,7 @@ var hierarchy =
       [ "ca.uqac.dim.turtledb.Attribute", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html", null ],
       [ "ca.uqac.dim.turtledb.Value", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_value.html", null ]
     ] ],
+    [ "ca.uqac.dim.turtledb.Main", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_main.html", null ],
     [ "ca.uqac.dim.turtledb.Product.ProductCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_product_1_1_product_cache_iterator.html", null ],
     [ "ca.uqac.dim.turtledb.Projection.ProjectionCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_projection_1_1_projection_cache_iterator.html", null ],
     [ "ca.uqac.dim.turtledb.Projection.ProjectionStreamIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_projection_1_1_projection_stream_iterator.html", null ],
@@ -64,7 +65,9 @@ var hierarchy =
         ] ],
         [ "ca.uqac.dim.turtledb.Selection.SelectionCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection_1_1_selection_cache_iterator.html", null ],
         [ "ca.uqac.dim.turtledb.Table.TableCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_cache_iterator.html", null ],
-        [ "ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_cache_iterator.html", null ],
+        [ "ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_cache_iterator.html", [
+          [ "ca.uqac.dim.turtledb.VariableTable.VariableTableCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_variable_table_1_1_variable_table_cache_iterator.html", null ]
+        ] ],
         [ "ca.uqac.dim.turtledb.Union.UnionCacheIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_union_1_1_union_cache_iterator.html", null ]
       ] ],
       [ "ca.uqac.dim.turtledb.RelationStreamIterator", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_stream_iterator.html", [

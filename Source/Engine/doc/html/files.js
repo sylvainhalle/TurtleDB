@@ -18,6 +18,7 @@ var files =
     [ "src/ca/uqac/dim/turtledb/Literal.java", "_literal_8java.html", null ],
     [ "src/ca/uqac/dim/turtledb/LogicalAnd.java", "_logical_and_8java.html", null ],
     [ "src/ca/uqac/dim/turtledb/LogicalOr.java", "_logical_or_8java.html", null ],
+    [ "src/ca/uqac/dim/turtledb/Main.java", "_main_8java.html", null ],
     [ "src/ca/uqac/dim/turtledb/NAryCondition.java", "_n_ary_condition_8java.html", null ],
     [ "src/ca/uqac/dim/turtledb/NAryRelation.java", "_n_ary_relation_8java.html", null ],
     [ "src/ca/uqac/dim/turtledb/Product.java", "_product_8java.html", null ],

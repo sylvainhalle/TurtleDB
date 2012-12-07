@@ -18,6 +18,7 @@ var namespaceca_1_1uqac_1_1dim_1_1turtledb =
     [ "Literal", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_literal.html", null ],
     [ "LogicalAnd", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_and.html", null ],
     [ "LogicalOr", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_or.html", null ],
+    [ "Main", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_main.html", null ],
     [ "NAryCondition", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html", null ],
     [ "NAryRelation", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation.html", null ],
     [ "Product", "classca_1_1uqac_1_1dim_1_1turtledb_1_1_product.html", null ],

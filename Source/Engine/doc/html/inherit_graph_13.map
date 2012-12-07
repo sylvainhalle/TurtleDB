@@ -1,8 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_visitor.html" title="ca.uqac.dim.turtledb.QueryVisitor" alt="" coords="5,85,221,115"/>
-<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_empty_query_visitor.html" title="ca.uqac.dim.turtledb.EmptyQueryVisitor" alt="" coords="277,32,531,61"/>
-<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_graphviz_query_visitor.html" title="ca.uqac.dim.turtledb.GraphvizQueryVisitor" alt="" coords="271,85,537,115"/>
-<area shape="rect" id="node11" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_query_visitor.html" title="ca.uqac.dim.turtledb.XmlQueryVisitor" alt="" coords="285,139,523,168"/>
-<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_ready_to_process_visitor.html" title="ca.uqac.dim.turtledb.ReadyToProcessVisitor" alt="" coords="587,5,869,35"/>
-<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_link_visitor.html" title="ca.uqac.dim.turtledb.TableLinkVisitor" alt="" coords="609,59,847,88"/>
+<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_query_processor.html" title="ca.uqac.dim.turtledb.QueryProcessor" alt="" coords="7,32,244,61"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_centralized_communicator_1_1_centralized_query_processor.html" title="ca.uqac.dim.turtledb.CentralizedCommunicator.CentralizedQueryProcessor" alt="" coords="293,5,752,35"/>
+<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_http_communicator_1_1_http_query_processor.html" title="ca.uqac.dim.turtledb.HttpCommunicator.HttpQueryProcessor" alt="" coords="335,59,711,88"/>
 </map>

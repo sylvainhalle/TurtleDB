@@ -1,3 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_schema.html" title="ca.uqac.dim.turtledb.Schema" alt="" coords="5,5,197,35"/>
+<area shape="rect" id="node1" href="$interfaceca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_iterator.html" title="ca.uqac.dim.turtledb.RelationIterator" alt="" coords="7,312,239,341"/>
+<area shape="rect" id="node3" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.RelationCacheIterator" alt="" coords="291,192,560,221"/>
+<area shape="rect" id="node23" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_relation_stream_iterator.html" title="ca.uqac.dim.turtledb.RelationStreamIterator" alt="" coords="288,432,563,461"/>
+<area shape="rect" id="node5" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation_1_1_binary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.BinaryRelation.BinaryRelationCacheIterator" alt="" coords="613,5,1011,35"/>
+<area shape="rect" id="node7" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_cache_iterator.html" title="ca.uqac.dim.turtledb.Join.JoinCacheIterator" alt="" coords="675,59,949,88"/>
+<area shape="rect" id="node9" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation_1_1_n_ary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.NAryRelation.NAryRelationCacheIterator" alt="" coords="621,112,1003,141"/>
+<area shape="rect" id="node13" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_selection_1_1_selection_cache_iterator.html" title="ca.uqac.dim.turtledb.Selection.SelectionCacheIterator" alt="" coords="645,165,979,195"/>
+<area shape="rect" id="node15" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_cache_iterator.html" title="ca.uqac.dim.turtledb.Table.TableCacheIterator" alt="" coords="667,219,957,248"/>
+<area shape="rect" id="node17" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_cache_iterator.html" title="ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationCacheIterator" alt="" coords="616,272,1008,301"/>
+<area shape="rect" id="node21" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_union_1_1_union_cache_iterator.html" title="ca.uqac.dim.turtledb.Union.UnionCacheIterator" alt="" coords="665,325,959,355"/>
+<area shape="rect" id="node11" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection_1_1_intersection_cache_iterator.html" title="ca.uqac.dim.turtledb.Intersection.IntersectionCacheIterator" alt="" coords="1075,112,1437,141"/>
+<area shape="rect" id="node19" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_variable_table_1_1_variable_table_cache_iterator.html" title="ca.uqac.dim.turtledb.VariableTable.VariableTableCacheIterator" alt="" coords="1064,272,1448,301"/>
+<area shape="rect" id="node25" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_binary_relation_1_1_binary_relation_stream_iterator.html" title="ca.uqac.dim.turtledb.BinaryRelation.BinaryRelationStreamIterator" alt="" coords="612,379,1012,408"/>
+<area shape="rect" id="node29" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_relation_1_1_n_ary_relation_stream_iterator.html" title="ca.uqac.dim.turtledb.NAryRelation.NAryRelationStreamIterator" alt="" coords="619,432,1005,461"/>
+<area shape="rect" id="node35" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_table_1_1_table_stream_iterator.html" title="ca.uqac.dim.turtledb.Table.TableStreamIterator" alt="" coords="665,485,959,515"/>
+<area shape="rect" id="node37" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_unary_relation_1_1_unary_relation_stream_iterator.html" title="ca.uqac.dim.turtledb.UnaryRelation.UnaryRelationStreamIterator" alt="" coords="613,539,1011,568"/>
+<area shape="rect" id="node27" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_join_1_1_join_stream_iterator.html" title="ca.uqac.dim.turtledb.Join.JoinStreamIterator" alt="" coords="1117,379,1395,408"/>
+<area shape="rect" id="node31" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_intersection_1_1_intersection_iterator.html" title="ca.uqac.dim.turtledb.Intersection.IntersectionIterator" alt="" coords="1093,432,1419,461"/>
+<area shape="rect" id="node33" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_product_1_1_product_stream_iterator.html" title="ca.uqac.dim.turtledb.Product.ProductStreamIterator" alt="" coords="1096,485,1416,515"/>
+<area shape="rect" id="node39" href="$classca_1_1uqac_1_1dim_1_1turtledb_1_1_variable_table_1_1_variable_table_stream_iterator.html" title="ca.uqac.dim.turtledb.VariableTable.VariableTableStreamIterator" alt="" coords="1061,539,1451,568"/>
 </map>

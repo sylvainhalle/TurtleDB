@@ -105,88 +105,89 @@
 <a name="l00029"></a>00029   {
 <a name="l00030"></a>00030     super();
 <a name="l00031"></a>00031     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a> = doc;
-<a name="l00032"></a>00032   }
-<a name="l00033"></a>00033   
-<a name="l00034"></a>00034   @Override
-<a name="l00035"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">00035</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_and.html">LogicalAnd</a> c)
-<a name="l00036"></a>00036   {
-<a name="l00037"></a>00037     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;and&quot;</span>);
-<a name="l00038"></a>00038     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(n, c);
-<a name="l00039"></a>00039   }
-<a name="l00040"></a>00040   
-<a name="l00041"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">00041</a>   <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(Node <span class="keyword">operator</span>, <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html">NAryCondition</a> c)
-<a name="l00042"></a>00042   {
-<a name="l00043"></a>00043     <span class="keywordtype">int</span> len = c.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html#a73505d27c1ba1b2d52d2addd1d87bf16">getArity</a>();
-<a name="l00044"></a>00044     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++)
-<a name="l00045"></a>00045     {
-<a name="l00046"></a>00046       Node op = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.pop();
-<a name="l00047"></a>00047       operator.appendChild(op);
-<a name="l00048"></a>00048     }
-<a name="l00049"></a>00049     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;condition&quot;</span>);
-<a name="l00050"></a>00050     out.appendChild(<span class="keyword">operator</span>);
-<a name="l00051"></a>00051     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.push(out);
-<a name="l00052"></a>00052   }
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054   @Override
-<a name="l00055"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a23c054de982533fd43872bec2bf5c74e">00055</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_or.html">LogicalOr</a> c)
-<a name="l00056"></a>00056   {
-<a name="l00057"></a>00057     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;or&quot;</span>);
-<a name="l00058"></a>00058     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(n, c);
-<a name="l00059"></a>00059   }
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061   @Override
-<a name="l00062"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ac7947eac191b34a8056e7127c4914387">00062</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html">Equality</a> e)
-<a name="l00063"></a>00063   {
-<a name="l00064"></a>00064     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;equals&quot;</span>);
-<a name="l00065"></a>00065     Node n_left = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(e.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html#aac08f83fb8cdaab8272c6e6d2262a8c9">m_left</a>);
-<a name="l00066"></a>00066     Node n_right = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(e.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html#a594cedcb8a24592e992d5034362c28f5">m_right</a>);
-<a name="l00067"></a>00067     n.appendChild(n_left);
-<a name="l00068"></a>00068     n.appendChild(n_right);
-<a name="l00069"></a>00069     Node n_c = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;condition&quot;</span>);
-<a name="l00070"></a>00070     n_c.appendChild(n);
-<a name="l00071"></a>00071     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.push(n_c);
-<a name="l00072"></a>00072   }
-<a name="l00073"></a>00073   
-<a name="l00074"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#af98c470de313ed0f04e3f0c32b35351c">00074</a>   <span class="keyword">public</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#af98c470de313ed0f04e3f0c32b35351c">getCondition</a>()
-<a name="l00075"></a>00075   {
-<a name="l00076"></a>00076     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.peek();
-<a name="l00077"></a>00077     <span class="keywordflow">return</span> out;
-<a name="l00078"></a>00078   }
-<a name="l00079"></a>00079   
-<a name="l00080"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a5e36556d4c00470ecf25e09fea6195d8">00080</a>   <span class="keyword">public</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a5e36556d4c00470ecf25e09fea6195d8">getNode</a>()
-<a name="l00081"></a>00081   {
-<a name="l00082"></a>00082     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.peek();
-<a name="l00083"></a>00083     <span class="keywordflow">return</span> out;
-<a name="l00084"></a>00084   }
-<a name="l00085"></a>00085 
-<a name="l00086"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">00086</a>   <span class="keyword">protected</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_literal.html">Literal</a> l)
-<a name="l00087"></a>00087   {
-<a name="l00088"></a>00088     Node n = null;
-<a name="l00089"></a>00089     <span class="keywordflow">if</span> (l instanceof <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html">Attribute</a>)
-<a name="l00090"></a>00090     {
-<a name="l00091"></a>00091       Attribute a = (Attribute) l;
-<a name="l00092"></a>00092       n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;attribute&quot;</span>);
-<a name="l00093"></a>00093       Node n_n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;name&quot;</span>);
-<a name="l00094"></a>00094       n_n.setTextContent(a.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html#a607a2ddb9db89ceab7d0201ccf4be3ba">getName</a>());
-<a name="l00095"></a>00095       n.appendChild(n_n);
-<a name="l00096"></a>00096       Node n_t = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;table&quot;</span>);
-<a name="l00097"></a>00097       n_t.setTextContent(a.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html#a7d431dee8abd0b3dbd962e301ef8eef0">getTableName</a>());
-<a name="l00098"></a>00098       n.appendChild(n_t);
-<a name="l00099"></a>00099     }
-<a name="l00100"></a>00100     <span class="keywordflow">if</span> (l instanceof <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_value.html">Value</a>)
-<a name="l00101"></a>00101       n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;value&quot;</span>);
-<a name="l00102"></a>00102     n.setTextContent(l.toString());
-<a name="l00103"></a>00103     <span class="keywordflow">return</span> n;
-<a name="l00104"></a>00104   }
-<a name="l00105"></a>00105 
-<a name="l00106"></a>00106 }
+<a name="l00032"></a>00032     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a> = <span class="keyword">new</span> Stack&lt;Node&gt;();
+<a name="l00033"></a>00033   }
+<a name="l00034"></a>00034   
+<a name="l00035"></a>00035   @Override
+<a name="l00036"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">00036</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_and.html">LogicalAnd</a> c)
+<a name="l00037"></a>00037   {
+<a name="l00038"></a>00038     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;and&quot;</span>);
+<a name="l00039"></a>00039     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(n, c);
+<a name="l00040"></a>00040   }
+<a name="l00041"></a>00041   
+<a name="l00042"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">00042</a>   <span class="keyword">protected</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(Node <span class="keyword">operator</span>, <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html">NAryCondition</a> c)
+<a name="l00043"></a>00043   {
+<a name="l00044"></a>00044     <span class="keywordtype">int</span> len = c.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_n_ary_condition.html#a73505d27c1ba1b2d52d2addd1d87bf16">getArity</a>();
+<a name="l00045"></a>00045     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++)
+<a name="l00046"></a>00046     {
+<a name="l00047"></a>00047       Node op = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.pop();
+<a name="l00048"></a>00048       operator.appendChild(op);
+<a name="l00049"></a>00049     }
+<a name="l00050"></a>00050     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;condition&quot;</span>);
+<a name="l00051"></a>00051     out.appendChild(<span class="keyword">operator</span>);
+<a name="l00052"></a>00052     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.push(out);
+<a name="l00053"></a>00053   }
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055   @Override
+<a name="l00056"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a23c054de982533fd43872bec2bf5c74e">00056</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_logical_or.html">LogicalOr</a> c)
+<a name="l00057"></a>00057   {
+<a name="l00058"></a>00058     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;or&quot;</span>);
+<a name="l00059"></a>00059     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ab992d7246db756c5eeeb88b3f3d908b6">visitNAry</a>(n, c);
+<a name="l00060"></a>00060   }
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062   @Override
+<a name="l00063"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#ac7947eac191b34a8056e7127c4914387">00063</a>   <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a7aa7781f89b95211a1bfa073ea012ae1">visit</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html">Equality</a> e)
+<a name="l00064"></a>00064   {
+<a name="l00065"></a>00065     Node n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;equals&quot;</span>);
+<a name="l00066"></a>00066     Node n_left = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(e.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html#aac08f83fb8cdaab8272c6e6d2262a8c9">m_left</a>);
+<a name="l00067"></a>00067     Node n_right = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(e.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_equality.html#a594cedcb8a24592e992d5034362c28f5">m_right</a>);
+<a name="l00068"></a>00068     n.appendChild(n_left);
+<a name="l00069"></a>00069     n.appendChild(n_right);
+<a name="l00070"></a>00070     Node n_c = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;condition&quot;</span>);
+<a name="l00071"></a>00071     n_c.appendChild(n);
+<a name="l00072"></a>00072     <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.push(n_c);
+<a name="l00073"></a>00073   }
+<a name="l00074"></a>00074   
+<a name="l00075"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#af98c470de313ed0f04e3f0c32b35351c">00075</a>   <span class="keyword">public</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#af98c470de313ed0f04e3f0c32b35351c">getCondition</a>()
+<a name="l00076"></a>00076   {
+<a name="l00077"></a>00077     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.peek();
+<a name="l00078"></a>00078     <span class="keywordflow">return</span> out;
+<a name="l00079"></a>00079   }
+<a name="l00080"></a>00080   
+<a name="l00081"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a5e36556d4c00470ecf25e09fea6195d8">00081</a>   <span class="keyword">public</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a5e36556d4c00470ecf25e09fea6195d8">getNode</a>()
+<a name="l00082"></a>00082   {
+<a name="l00083"></a>00083     Node out = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a6dcdaf0be1e628b6b8eb425f8cc450e8">m_parts</a>.peek();
+<a name="l00084"></a>00084     <span class="keywordflow">return</span> out;
+<a name="l00085"></a>00085   }
+<a name="l00086"></a>00086 
+<a name="l00087"></a><a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">00087</a>   <span class="keyword">protected</span> Node <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a4cdd8411024b27b14d12e5cd9598032f">createLiteralNode</a>(<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_literal.html">Literal</a> l)
+<a name="l00088"></a>00088   {
+<a name="l00089"></a>00089     Node n = null;
+<a name="l00090"></a>00090     <span class="keywordflow">if</span> (l instanceof <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html">Attribute</a>)
+<a name="l00091"></a>00091     {
+<a name="l00092"></a>00092       Attribute a = (Attribute) l;
+<a name="l00093"></a>00093       n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;attribute&quot;</span>);
+<a name="l00094"></a>00094       Node n_n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;name&quot;</span>);
+<a name="l00095"></a>00095       n_n.setTextContent(a.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html#a607a2ddb9db89ceab7d0201ccf4be3ba">getName</a>());
+<a name="l00096"></a>00096       n.appendChild(n_n);
+<a name="l00097"></a>00097       Node n_t = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;table&quot;</span>);
+<a name="l00098"></a>00098       n_t.setTextContent(a.<a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_attribute.html#a7d431dee8abd0b3dbd962e301ef8eef0">getTableName</a>());
+<a name="l00099"></a>00099       n.appendChild(n_t);
+<a name="l00100"></a>00100     }
+<a name="l00101"></a>00101     <span class="keywordflow">if</span> (l instanceof <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_value.html">Value</a>)
+<a name="l00102"></a>00102       n = <a class="code" href="classca_1_1uqac_1_1dim_1_1turtledb_1_1_xml_condition_visitor.html#a476d6c1c0fbd6669c864bfe7e8c4cecb">m_doc</a>.createElement(<span class="stringliteral">&quot;value&quot;</span>);
+<a name="l00103"></a>00103     n.setTextContent(l.toString());
+<a name="l00104"></a>00104     <span class="keywordflow">return</span> n;
+<a name="l00105"></a>00105   }
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 }
 </pre></div></div><!-- contents -->
 </div>
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><a class="el" href="_xml_condition_visitor_8java.html">XmlConditionVisitor.java</a>      </li>
 
-    <li class="footer">Generated on Tue Nov 20 2012 13:26:48 for TurtleDB by
+    <li class="footer">Generated on Fri Dec 7 2012 18:55:40 for TurtleDB by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
