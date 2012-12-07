@@ -71,8 +71,11 @@ public class Union extends NAryRelation
       for (Relation r : m_relations)
       {
         RelationIterator i = r.cacheIterator();
-        Tuple t = i.next();
-        tab.put(t);
+        while (i.hasNext())
+        {
+          Tuple t = i.next();
+          tab.put(t);
+        }
       }
       m_intermediateResult = tab;
     }
