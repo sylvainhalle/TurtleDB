@@ -170,7 +170,7 @@ public class Table extends Relation
   {
     assert r != null;
     m_schema = r.getSchema();
-    Iterator<Tuple> i = r.streamIterator();
+    Iterator<Tuple> i = r.iterator();
     while (i.hasNext())
     {
       Tuple t = i.next();

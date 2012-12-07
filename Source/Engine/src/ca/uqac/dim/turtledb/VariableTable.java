@@ -196,6 +196,26 @@ public class VariableTable extends UnaryRelation
         m_iterator = m_relation.streamIterator();
     }
   }
+  
+  protected class VariableTableCacheIterator extends UnaryRelationCacheIterator
+  {
+    protected RelationIterator m_iterator = null;
+    
+    protected Tuple m_nextTuple;
+    
+    public VariableTableCacheIterator()
+    {
+      super();
+      reset();
+    }
+    
+    @Override
+    public void reset()
+    {
+      if (m_relation != null)
+        m_iterator = m_relation.cacheIterator();
+    }
+  }
 
   @Override
   public RelationStreamIterator streamIterator()
@@ -206,8 +226,7 @@ public class VariableTable extends UnaryRelation
   @Override
   public RelationIterator cacheIterator()
   {
-    // TODO Auto-generated method stub
-    return null;
+    return new VariableTableCacheIterator();
   }
   
 }
