@@ -23,6 +23,10 @@ public class GraphvizConditionVisitor extends ConditionVisitor
 {
   protected Stack<String> m_parts;
 
+  public GraphvizConditionVisitor() {
+    m_parts = new Stack<String>();
+  }
+
   @Override
   public void visit(LogicalAnd c)
   {

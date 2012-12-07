@@ -29,6 +29,7 @@ public class XmlConditionVisitor extends ConditionVisitor
   {
     super();
     m_doc = doc;
+    m_parts = new Stack<Node>();
   }
   
   @Override
