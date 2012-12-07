@@ -163,8 +163,7 @@ public class Table extends Relation
    * Copies the contents of a relation into the current relation.
    * In particular, invoking {@link copy} with a query tree triggers the
    * computation of that query and the storing of the resulting tuples
-   * into the current relation. <b>Warning:</b> make sure you reset <tt>r</tt>
-   * before calling <tt>copy()</tt>.
+   * into the current relation.
    * @param r The relation to copy from
    */
   public void copy(Relation r)
@@ -174,7 +173,8 @@ public class Table extends Relation
     Iterator<Tuple> i = r.streamIterator();
     while (i.hasNext())
     {
-      this.put(i.next());
+      Tuple t = i.next();
+      this.put(t);
     }
   }
   

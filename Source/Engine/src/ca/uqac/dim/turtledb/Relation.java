@@ -100,6 +100,7 @@ public abstract class Relation
       for (Attribute s : sch)
       {
     	Value v = t.get(s);
+    	assert v != null;
         out.append(v).append("\t");
       }
       out.append("\n");

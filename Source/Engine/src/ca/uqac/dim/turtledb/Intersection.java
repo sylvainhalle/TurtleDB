@@ -50,7 +50,12 @@ public class Intersection extends NAryRelation
         all_equal = allEqual();
         smallest_tuple = super.incrementSmallestTuple();
       } while (!all_equal && smallest_tuple != null);
-      return smallest_tuple;
+      // Change tuple's schema to that of first relation
+      Relation r = m_relations.get(0);
+      Schema sch = r.getSchema();
+      Tuple t2 = new Tuple(smallest_tuple);
+      t2.setSchema(sch);
+      return t2;
     }
     
     /**
@@ -106,7 +111,11 @@ public class Intersection extends NAryRelation
         for (int i = 1; i < m_results.size(); i++)
         {
           Table tt = m_results.elementAt(i);
-          if (!tt.contains(t))
+          // Set schema of t to that of tt so that it can find it
+          Schema sch = tt.getSchema();
+          Tuple t2 = new Tuple(t);
+          t2.setSchema(sch);
+          if (!tt.contains(t2))
           {
             all_in = false;
             break;

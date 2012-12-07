@@ -36,6 +36,24 @@ public class Tuple implements Comparable<Tuple>
     m_values = new Vector<Value>();
   }
   
+  /**
+   * Constructor by copy
+   * @param t A tuple
+   */
+  public Tuple(Tuple t)
+  {
+    this();
+    assert t != null && t.m_attributes != null && t.m_values != null;
+    for (Attribute a : t.m_attributes)
+    {
+      m_attributes.add(a);
+    }
+    for (Value v : t.m_values)
+    {
+      m_values.add(v);
+    }
+  }
+  
   public Tuple(Schema sch, Value[] val)
   {
     this();
@@ -54,6 +72,21 @@ public class Tuple implements Comparable<Tuple>
     for (int i = 0; i < parts.length; i++)
     {
       this.put(sch.elementAt(i), new Value(parts[i]));
+    }
+  }
+  
+  /**
+   * Overwrites the schema of a tuple. This works only if
+   * the new schema has the same cardinality as the old one.
+   * @param sch The schema to replace the tuple's current one
+   */
+  public void setSchema(Schema sch)
+  {
+    assert sch.size() == m_attributes.size();
+    m_attributes.clear();
+    for (Attribute a : sch)
+    {
+      m_attributes.add(a);
     }
   }
   

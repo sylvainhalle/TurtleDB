@@ -46,7 +46,14 @@ public class Union extends NAryRelation
     protected Tuple internalNext()
     {
       super.initializeIteration();
-      return super.incrementSmallestTuple();
+      Relation r = m_relations.get(0);
+      Schema sch = r.getSchema();
+      Tuple t = super.incrementSmallestTuple();
+      if (t == null)
+        return null;
+      Tuple t2 = new Tuple(t);
+      t2.setSchema(sch);
+      return t2;
     }
   }
 
@@ -67,6 +74,7 @@ public class Union extends NAryRelation
     @Override
     protected void getIntermediateResult()
     {
+      Schema sch = getSchema();
       Table tab = new Table(getSchema());
       for (Relation r : m_relations)
       {
@@ -74,7 +82,10 @@ public class Union extends NAryRelation
         while (i.hasNext())
         {
           Tuple t = i.next();
-          tab.put(t);
+          // Set schema of t to that of the current table
+          Tuple t2 = new Tuple(t);
+          t2.setSchema(sch);
+          tab.put(t2);
         }
       }
       m_intermediateResult = tab;
