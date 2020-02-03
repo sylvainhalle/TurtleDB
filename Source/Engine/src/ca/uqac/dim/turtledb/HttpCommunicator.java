@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,23 +23,23 @@ import java.util.*;
 
 public class HttpCommunicator extends Communicator
 {
-  
+
   protected Map<String,SiteInfo> m_siteInfo;
-  
+
   protected Engine m_engine;
-  
+
   public HttpCommunicator()
   {
     super();
     m_siteInfo = new HashMap<String,SiteInfo>();
   }
-  
+
   public void addSiteInfo(String name, String url)
   {
     SiteInfo si = new SiteInfo(name, url);
     m_siteInfo.put(name, si);
   }
-  
+
   protected void sendQuery(String site_name, Relation r) throws Communicator.QueryExecutionException
   {
     SiteInfo si = m_siteInfo.get(site_name);
@@ -59,13 +59,13 @@ public class HttpCommunicator extends Communicator
       throw new Communicator.QueryExecutionException("IOException while sending data to site " + site_name);
     }
   }
-  
+
   protected void sendQuery(String site_name, Set<Relation> rels) throws Communicator.QueryExecutionException
   {
     for (Relation r : rels)
       sendQuery(site_name, r);
   }
-  
+
   /**
    * Sends a string of data through an TCP connection at a given URL:port
    * @param destination_url The destination URL
@@ -87,13 +87,13 @@ public class HttpCommunicator extends Communicator
     StringBuilder out = new StringBuilder();
     while ((line = rd.readLine()) != null)
     {
-        out.append(line).append("\n");
+      out.append(line).append("\n");
     }
     wr.close();
     rd.close();   
     return out.toString();
   }
-  
+
   /**
    * Sends a string of data through an TCP connection at a given URL:port
    * using an HTTP POST request
@@ -118,7 +118,7 @@ public class HttpCommunicator extends Communicator
       throw new IOException("HTTP error code");
     return http_response;
   }
-  
+
   /**
    * Information about a site
    * @author sylvain
@@ -127,7 +127,7 @@ public class HttpCommunicator extends Communicator
   {
     public String m_siteName;
     public String m_siteUrl;
-    
+
     public SiteInfo(String name, String url)
     {
       super();
@@ -148,13 +148,13 @@ public class HttpCommunicator extends Communicator
   {
     return new HttpQueryProcessor(qp);
   }
-  
+
   protected class HttpQueryProcessor extends QueryProcessor
   {
     protected QueryPlan m_queryPlan;
-    
+
     protected Relation m_result;
-    
+
     public HttpQueryProcessor(QueryPlan qp)
     {
       m_queryPlan = qp;
@@ -184,7 +184,7 @@ public class HttpCommunicator extends Communicator
       return m_result;
     }
   }
-  
+
   /**
    * Listen to the connection for any incoming messages
    */
@@ -202,7 +202,7 @@ public class HttpCommunicator extends Communicator
       // Nothing to do if we can't open a socket
       return;
     }
-    
+
     //go in a infinite loop, wait for connections, process request, send response
     while (true)
     {
@@ -227,9 +227,20 @@ public class HttpCommunicator extends Communicator
       { 
         e.printStackTrace();
       }
+      if (serversocket != null)
+      {
+        try 
+        {
+          serversocket.close();
+        } 
+        catch (IOException e)
+        {
+          e.printStackTrace();
+        }
+      }
     }
   }
-  
+
   //this method makes the HTTP header for the response
   //the headers job is to tell the browser the result of the request
   //among if it was successful or not.
@@ -238,24 +249,24 @@ public class HttpCommunicator extends Communicator
     String s = "HTTP/1.1 ";
     switch (return_code)
     {
-      case 200:
-        s = s + "200 OK";
-        break;
-      case 400:
-        s = s + "400 Bad Request";
-        break;
-      case 403:
-        s = s + "403 Forbidden";
-        break;
-      case 404:
-        s = s + "404 Not Found";
-        break;
-      case 500:
-        s = s + "500 Internal Server Error";
-        break;
-      case 501:
-        s = s + "501 Not Implemented";
-        break;
+    case 200:
+      s = s + "200 OK";
+      break;
+    case 400:
+      s = s + "400 Bad Request";
+      break;
+    case 403:
+      s = s + "403 Forbidden";
+      break;
+    case 404:
+      s = s + "404 Not Found";
+      break;
+    case 500:
+      s = s + "500 Internal Server Error";
+      break;
+    case 501:
+      s = s + "501 Not Implemented";
+      break;
     }
     s = s + "\r\n";
     s = s + "Connection: close\r\n"; //we can't handle persistent connections
@@ -263,7 +274,7 @@ public class HttpCommunicator extends Communicator
     s = s + "\r\n"; //this marks the end of the httpheader
     return s;
   }
-  
+
   private void http_handler(BufferedReader input, DataOutputStream output)
   {
     int method = 0; //1 post, 0 not supported
@@ -283,7 +294,7 @@ public class HttpCommunicator extends Communicator
       String line = input.readLine();
       while (line != null)
       {
-        
+
         line = input.readLine();
       }
     }
