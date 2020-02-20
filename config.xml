@@ -26,8 +26,9 @@
     <filename>turtledb.jar</filename>
   </jar>
 
-  <!-- The project's name -->
+  <!-- The project's name and version -->
   <name>TurtleDB</name>
+  <version>1.0.3</version>
   
   <!-- The project's author. Currently this only
   shows up in the footer of the Javadoc documentation. -->
