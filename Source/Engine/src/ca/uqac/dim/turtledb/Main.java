@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,8 +30,8 @@ package ca.uqac.dim.turtledb;
    */
   public static void main(String[] args)
   {
-    System.out.println("TurtleDB version 1.01");
-    System.out.println("(C) 2012 Sylvain Hallé, Université du Québec à Chicoutimi\n");
+    System.out.println("TurtleDB version 1.0.3");
+    System.out.println("(C) 2012-2020 Sylvain Hallé, Université du Québec à Chicoutimi\n");
     System.exit(0);
   }
 }

@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32,17 +32,26 @@ public class GraphvizConditionVisitor extends ConditionVisitor
   {
     visitNAry("&land;", c);
   }
-  
+
   protected void visitNAry(String operator, NAryCondition c)
   {
     StringBuilder out = new StringBuilder();
     int len = c.getArity();
-    for (int i = 0; i < len; i++)
+    if (len == 1)
     {
       String op = m_parts.pop();
-      if (i > 0)
-        out.append(operator);
+      out.append(operator);
       out.append(op);
+    }
+    else
+    {
+      for (int i = 0; i < len; i++)
+      {
+        String op = m_parts.pop();
+        if (i > 0)
+          out.append(operator);
+        out.append(op);
+      }
     }
     m_parts.push(out.toString());
   }
@@ -54,13 +63,19 @@ public class GraphvizConditionVisitor extends ConditionVisitor
   }
 
   @Override
+  public void visit(LogicalNot c)
+  {
+    visitNAry("&not;", c);
+  }
+
+  @Override
   public void visit(Equality c)
   {
     StringBuilder out = new StringBuilder();
     out.append(c.m_left.toString()).append("=").append(c.m_right.toString());
     m_parts.push(out.toString());
   }
-  
+
   public String getGraphviz()
   {
     String out = m_parts.peek();

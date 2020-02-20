@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012-2020  Sylvain Hallé
+    Copyright (C) 2012  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,13 +17,44 @@
  -------------------------------------------------------------------------*/
 package ca.uqac.dim.turtledb;
 
-public abstract class ConditionVisitor
+public class LogicalNot extends NAryCondition
 {
-  public abstract void visit(LogicalAnd c);
-  
-  public abstract void visit(LogicalOr c);
-  
-  public abstract void visit(Equality c);
+  public LogicalNot()
+  {
+    super();
+    m_operator = "!";
+  }
 
-  public abstract void visit(LogicalNot c);
+  @Override
+  public boolean evaluate(Tuple t)
+  {
+    for (Condition c : m_conditions)
+    {
+      if (!c.evaluate(t))
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  public void accept(ConditionVisitor v)
+  {
+    super.acceptNAry(v);
+    v.visit(this);
+  }
+
+  @Override
+  public String toString()
+  {
+    if (m_conditions == null || m_conditions.isEmpty())
+    {
+      return "!";
+    }
+    return "! (" + m_conditions.get(0) + ")";
+  }
 }

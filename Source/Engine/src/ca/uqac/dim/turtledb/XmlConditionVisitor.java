@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -56,6 +56,13 @@ public class XmlConditionVisitor extends ConditionVisitor
   public void visit(LogicalOr c)
   {
     Node n = m_doc.createElement("or");
+    visitNAry(n, c);
+  }
+  
+  @Override
+  public void visit(LogicalNot c)
+  {
+    Node n = m_doc.createElement("not");
     visitNAry(n, c);
   }
 
