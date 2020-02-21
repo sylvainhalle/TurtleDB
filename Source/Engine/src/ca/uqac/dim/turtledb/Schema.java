@@ -28,7 +28,7 @@ public class Schema extends Vector<Attribute>
 {
 
   /**
-   * 
+   * Dummy UID
    */
   private static final long serialVersionUID = 1L;
   

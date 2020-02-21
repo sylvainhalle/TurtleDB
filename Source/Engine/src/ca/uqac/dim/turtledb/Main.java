@@ -34,4 +34,9 @@ package ca.uqac.dim.turtledb;
     System.out.println("(C) 2012-2020 Sylvain Hallé, Université du Québec à Chicoutimi\n");
     System.exit(0);
   }
+  
+  private Main()
+  {
+    throw new UnsupportedOperationException("Cannot instantiate singleton class Main");
+  }
 }

@@ -17,6 +17,7 @@
  -------------------------------------------------------------------------*/
 package ca.uqac.dim.turtledb;
 
+import java.util.Map;
 import java.util.Stack;
 
 /*package*/ class GraphvizQueryVisitor extends QueryVisitor
@@ -65,6 +66,17 @@ import java.util.Stack;
     String m_operand = m_nodeList.pop();
     m_connectivity.append("  ").append(newNode).append(" -- ").append(m_operand).append(";\n");
     m_nodes.append("  ").append(newNode).append("[label = <&pi;<sub>").append(createSchemaString(r.m_schema)).append("</sub>>];\n");
+    m_nodeList.push(newNode);    
+  }
+  
+  @Override
+  public void visit(Renaming r)
+  {
+    String newNode = "node" + m_nodeCounter;
+    m_nodeCounter++;
+    String m_operand = m_nodeList.pop();
+    m_connectivity.append("  ").append(newNode).append(" -- ").append(m_operand).append(";\n");
+    m_nodes.append("  ").append(newNode).append("[label = <&rho;<sub>").append(createRenamingString(r.m_renamedAttributes)).append("</sub>>];\n");
     m_nodeList.push(newNode);    
   }
   
@@ -160,6 +172,20 @@ import java.util.Stack;
     for (Attribute a : sch)
     {
       out.append(a.toString());
+      if (!first)
+        out.append(",");
+      first = false;
+    }
+    return out.toString();
+  }
+  
+  protected String createRenamingString(Map<Attribute,Attribute> renaming)
+  {
+    StringBuilder out = new StringBuilder();
+    boolean first = true;
+    for (Map.Entry<Attribute,Attribute> e : renaming.entrySet())
+    {
+      out.append(e.getKey().toString()).append("&rarr;").append(e.getValue().toString());
       if (!first)
         out.append(",");
       first = false;

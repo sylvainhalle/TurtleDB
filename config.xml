@@ -28,7 +28,7 @@
 
   <!-- The project's name and version -->
   <name>TurtleDB</name>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   
   <!-- The project's author. Currently this only
   shows up in the footer of the Javadoc documentation. -->
@@ -36,7 +36,7 @@
   
   <!-- The project's main class -->
   <mainclass>ca.uqac.dim.turtledb</mainclass>
-  
+                                                       
   <test>
     <!-- The filename pattern to recognize test files -->
     <filenamepattern>**/*Test.java</filenamepattern>

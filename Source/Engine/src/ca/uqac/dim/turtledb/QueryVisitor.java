@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -34,6 +34,8 @@ public abstract class QueryVisitor
   public abstract void visit(Join r) throws VisitorException;
   
   public abstract void visit(Product r) throws VisitorException;
+  
+  public abstract void visit(Renaming r) throws VisitorException;
   
   /**
    * Exception raised when a visitor wants to signal an error.

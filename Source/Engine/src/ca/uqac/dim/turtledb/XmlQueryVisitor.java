@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -68,6 +68,19 @@ import org.w3c.dom.*;
   {
     Node n = m_doc.createElement("projection");
     Node schema = createSchemaNode(r.m_schema);
+    Node relation = m_parts.pop();
+    n.appendChild(schema);
+    n.appendChild(relation);
+    Node op = m_doc.createElement("operand");
+    op.appendChild(n);
+    m_parts.push(op);
+  }
+  
+  @Override
+  public void visit(Renaming r)
+  {
+    Node n = m_doc.createElement("renaming");
+    Node schema = createRenamingNode(r.m_renamedAttributes);
     Node relation = m_parts.pop();
     n.appendChild(schema);
     n.appendChild(relation);
@@ -170,6 +183,27 @@ import org.w3c.dom.*;
       Node attnode = m_doc.createElement("attribute");
       attnode.setTextContent(a.toString());
       n.appendChild(attnode);
+    }
+    return n;
+  }
+  
+  protected Node createRenamingNode(Map<Attribute,Attribute> mapping)
+  {
+    Node n = m_doc.createElement("renamings");
+    for (Map.Entry<Attribute,Attribute> e : mapping.entrySet())
+    {
+      Node renaming = m_doc.createElement("renaming");
+      Node from = m_doc.createElement("from");
+      Node from_attnode = m_doc.createElement("attribute");
+      from_attnode.setTextContent(e.getKey().toString());
+      from.appendChild(from_attnode);
+      Node to = m_doc.createElement("to");
+      Node to_attnode = m_doc.createElement("attribute");
+      to_attnode.setTextContent(e.getValue().toString());
+      to.appendChild(to_attnode);
+      renaming.appendChild(from);
+      renaming.appendChild(to);
+      n.appendChild(renaming);
     }
     return n;
   }

@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------
     Simple distributed database engine
-    Copyright (C) 2012  Sylvain Hallé
+    Copyright (C) 2012-2020  Sylvain Hallé
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ public class SimpleDemo
       System.out.println(u2);
     }
     
-    // Example 2: a more complex query with disjunctive selection
+    // Example 2: a more complex query with disjunctive selection and renaming
     {
       LogicalOr c = new LogicalOr();
       c.addCondition(new Equality(new Attribute("A", "a"), new Value("0")));
@@ -46,10 +46,12 @@ public class SimpleDemo
       Relation sel = new Selection(c, r);
       Schema sch = new Schema("A.a");
       Relation pro = new Projection(sch, sel);
+      Renaming ren = new Renaming(pro);
+      ren.rename(new Attribute("A.a"), new Attribute("A.z"));
       Product u = new Product();
-      u.addOperand(pro);
+      u.addOperand(ren);
       u.addOperand(r2);  
-
+      
       // Create relational algebra tree and output
       // it in various formats
       System.out.println(u);
